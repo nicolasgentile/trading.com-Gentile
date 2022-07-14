@@ -21,8 +21,9 @@ body {
     "encabezado" 
     "inicio"
     "section"
+    "aviso"
     "pie";
-    grid-template-rows: 50px auto auto 70px;
+    grid-template-rows: 50px auto auto auto 70px;
 }
 
 @keyframes cambiar{
@@ -153,6 +154,9 @@ a:hover {
 .contenidoIndex11 {
     height: auto;
 }
+.contenidoIndex11:hover {
+    transform:scale(1.2);
+}
 .contenidoIndex12 {
     text-align: center;
 }
@@ -161,7 +165,7 @@ a:hover {
     padding: 4px;
     border: 3px #62FC47 solid;
     border-radius: 25px;
-    box-shadow: 7px 13px 37px red;
+    box-shadow: 10px 7px 25px red;
     margin: 15px;
 }
 
@@ -173,6 +177,9 @@ a:hover {
 .contenidoIndex21 {
     height: auto;
 }
+.contenidoIndex21:hover {
+    transform:scale(1.2);
+}
 .contenidoIndex22 {
     text-align: center;
 }
@@ -181,7 +188,7 @@ a:hover {
     padding: 4px;
     border: 3px #62FC47 solid;
     border-radius: 25px;
-    box-shadow: 7px 13px 37px red;
+    box-shadow: 10px 7px 25px red;
     margin: 15px;
 }
 
@@ -193,6 +200,9 @@ a:hover {
 .contenidoIndex31 {
     height: auto;
 }
+.contenidoIndex31:hover {
+    transform:scale(1.2);
+}
 .contenidoIndex32 {
     text-align: center;
 }
@@ -201,7 +211,7 @@ a:hover {
     padding: 4px;
     border: 3px #62FC47 solid;
     border-radius: 25px;
-    box-shadow: 7px 13px 37px red;
+    box-shadow: 10px 7px 25px red;
     margin: 15px;
 }
 
@@ -213,6 +223,9 @@ a:hover {
 .contenidoIndex41 {
     height: auto;
 }
+.contenidoIndex41:hover {
+    transform:scale(1.2);
+}
 .contenidoIndex42 {
     text-align: center;
 }
@@ -221,9 +234,36 @@ a:hover {
     padding: 4px;
     border: 3px #62FC47 solid;
     border-radius: 25px;
-    box-shadow: 7px 13px 37px red;
+    box-shadow: 10px 7px 25px red;
     margin: 15px;
 }
+
+/* Aviso */
+
+.sectionAviso {
+    grid-area: "aviso";
+    height: auto;
+}
+.aviso {
+    padding: 5px;
+    line-height: 30px;
+    margin: 15px;
+    border: solid;
+    color: crimson;
+    animation-name: atencion; 
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes atencion {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
 
 /* Footer */
 
@@ -273,7 +313,7 @@ a:hover {
 
 @media screen and (min-width: 600px) {
     body {
-        grid-template-rows: 60px auto auto 70px;
+        grid-template-rows: 60px auto auto auto 70px;
     }
     header nav {
         font-size: 15px;
@@ -315,6 +355,9 @@ a:hover {
     }
     .contenidoIndex2 {
         align-self: center;
+    }
+    .aviso {
+        font-size: 23px;
     }
 }
 
@@ -376,6 +419,9 @@ a:hover {
         height: 100%;
         width: 100%;
         justify-content: space-around;
+    }
+    .aviso {
+    font-size: 24px;
     }
 }
 

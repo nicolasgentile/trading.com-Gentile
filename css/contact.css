@@ -128,6 +128,10 @@ a:hover {
     box-shadow: 7px 13px 37px red;
     margin: 15px;
 }
+input:focus {
+	Color: black;
+    background-color: red;
+}
 .tituloFormulario {
     text-align: center;
     padding: 3px;
@@ -147,6 +151,10 @@ a:hover {
     border-radius: 15px;
     color: #7643CB;
     margin: 5px; 
+}
+.desplegableContact:focus {
+    Color: black;
+    background-color: red;
 }
 .quiereContact {
     padding: 7px;

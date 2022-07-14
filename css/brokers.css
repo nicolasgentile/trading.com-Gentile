@@ -21,8 +21,9 @@ body {
     "encabezado" 
     "inicioBrokers"
     "sectionBrokers"
+    "aviso"
     "pie";
-    grid-template-rows: 50px auto auto 70px;
+    grid-template-rows: 50px auto auto auto 70px;
     }
 
 @keyframes cambiar{
@@ -141,6 +142,8 @@ a:hover {
 }
 .contenidoBrokers11 {
     height: auto;
+    animation: fadeInDown; 
+    animation-duration: 2s;
 }
 .contenidoBrokers12 {
     text-align: center;
@@ -150,7 +153,7 @@ a:hover {
     padding: 4px;
     border: 3px #62FC47 solid;
     border-radius: 25px;
-    box-shadow: 7px 13px 37px red;
+    box-shadow: 10px 7px 25px red;
     margin: 15px;
 }
 .contenidoBrokers2 {
@@ -163,6 +166,8 @@ a:hover {
 }
 .contenidoBrokers21 {
     height: auto;
+    animation: fadeInDown; 
+    animation-duration: 2s;
 }
 .contenidoBrokers22 {
     text-align: center;
@@ -172,7 +177,7 @@ a:hover {
     padding: 4px;
     border: 3px #62FC47 solid;
     border-radius: 25px;
-    box-shadow: 7px 13px 37px red;
+    box-shadow: 10px 7px 25px red;
     margin: 15px;
 }
 .contenidoBrokers3 {
@@ -185,6 +190,8 @@ a:hover {
 }
 .contenidoBrokers31 {
     height: auto;
+    animation: fadeInLeft; 
+    animation-duration: 2s;
 }
 .contenidoBrokers32 {
     text-align: center;
@@ -194,7 +201,7 @@ a:hover {
     padding: 4px;
     border: 3px #62FC47 solid;
     border-radius: 25px;
-    box-shadow: 7px 13px 37px red;
+    box-shadow: 10px 7px 25px red;
     margin: 15px;
 }
 .contenidoBrokers4 {
@@ -207,6 +214,8 @@ a:hover {
 }
 .contenidoBrokers41 {
     height: auto;
+    animation: fadeInRight; 
+    animation-duration: 2s;
 }
 .contenidoBrokers42 {
     text-align: center;
@@ -216,7 +225,7 @@ a:hover {
     padding: 4px;
     border: 3px #62FC47 solid;
     border-radius: 25px;
-    box-shadow: 7px 13px 37px red;
+    box-shadow: 10px 7px 25px red;
     margin: 15px;
 }
 .contenidoBrokers5 {
@@ -229,6 +238,8 @@ a:hover {
 }
 .contenidoBrokers51 {
     height: auto;
+    animation: fadeInUp; 
+    animation-duration: 2s;
 }
 .contenidoBrokers52 {
     text-align: center;
@@ -238,7 +249,7 @@ a:hover {
     padding: 4px;
     border: 3px #62FC47 solid;
     border-radius: 25px;
-    box-shadow: 7px 13px 37px red;
+    box-shadow: 10px 7px 25px red;
     margin: 15px;
 }
 .contenidoBrokers6 {
@@ -251,6 +262,8 @@ a:hover {
 }
 .contenidoBrokers61 {
     height: auto;
+    animation: fadeInUp; 
+    animation-duration: 2s;
 }
 .contenidoBrokers62 {
     text-align: center;
@@ -260,9 +273,36 @@ a:hover {
     padding: 4px;
     border: 3px #62FC47 solid;
     border-radius: 25px;
-    box-shadow: 7px 13px 37px red;
+    box-shadow: 10px 7px 25px red;
     margin: 15px;
 }
+
+/* Aviso */
+
+.sectionAviso {
+    grid-area: "aviso";
+    height: auto;
+}
+.aviso {
+    padding: 5px;
+    line-height: 30px;
+    margin: 15px;
+    border: solid;
+    color: crimson;
+    animation-name: atencion; 
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes atencion {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
 
 /* Footer */
 
@@ -312,7 +352,7 @@ a:hover {
 
 @media screen and (min-width: 600px) {
     body {
-        grid-template-rows: 60px auto auto 70px;
+        grid-template-rows: 60px auto auto  auto 70px;
     }
     header nav {
         font-size: 15px;
@@ -350,6 +390,9 @@ a:hover {
         grid-template-rows: auto auto auto;
         grid-template-columns: 1fr 1fr;
     }
+    .aviso {
+        font-size: 23px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -376,5 +419,8 @@ a:hover {
     .contenidoBrokers {
         font-size: 20px;
         line-height: 25px;
+    }
+    .aviso {
+        font-size: 24px;
     }
 }
