@@ -115,6 +115,8 @@ a:hover {
     text-align: center;
     padding: 5px;
     text-decoration: underline;
+    animation: bounce; 
+    animation-duration: 2s;
 }
 
 .sub1Binarias {

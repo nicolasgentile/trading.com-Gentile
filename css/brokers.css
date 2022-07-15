@@ -113,6 +113,8 @@ a:hover {
     padding: 3px;
     text-align: center;
     text-decoration: underline;
+    animation: bounce; 
+    animation-duration: 2s;
 }
 
 /* Contenido Brokers */
