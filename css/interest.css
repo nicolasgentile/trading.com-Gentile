@@ -16,6 +16,14 @@ body {
     background-size: 400% 400%;
     position: relative;
     animation: cambiar 7s ease-in-out infinite;
+    display: grid;
+    grid-template-areas: 
+    "encabezado" 
+    "inicioInterest"
+    "sectionInterest"
+    "aviso"
+    "pie";
+    grid-template-rows: 50px auto auto auto 70px
     }
 
 @keyframes cambiar{
@@ -93,6 +101,259 @@ a:hover {
     font-size: 10px;
 }
 
+/* Main Interest */
+
+.mainInterest {
+    grid-area: "inicioInterest";
+    height: auto;
+    padding: 5px;
+    color: #7643CB; 
+}
+.tituloMainInterest {
+    padding: 3px;
+    text-align: center;
+    text-decoration: underline;
+    animation: bounce; 
+    animation-duration: 2s;
+}
+
+/* Section Interest */
+.contenidoInterest {
+    grid-area: "sectionInterest";
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+        "item1Interest" 
+        "item2Interest" 
+        "item3Interest"
+        "item4Interest"
+        "item5Interest"
+        "item6Interest"
+        "item7Interest"
+        "item8Interest";
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    justify-items: center;
+    color: #7643CB;
+}
+.contenidoInterest1 {
+    grid-area: "item1Interest";
+    display: flex;
+    flex-direction: column;
+    border: 1px #62FC47 solid;
+    padding: 3px;
+    align-items: center;
+}
+.contenidoInterest11 {
+    height: auto;
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
+.contenidoInterest12 {
+    text-align: center;
+}
+.contenidoInterest13 {
+    text-align: center;
+    padding: 4px;
+    border: 3px #62FC47 solid;
+    border-radius: 25px;
+    box-shadow: 10px 7px 25px red;
+    margin: 15px;
+}
+.contenidoInterest2 {
+    grid-area: "item2Interest";
+    display: flex;
+    flex-direction: column;
+    border: 1px #62FC47 solid;
+    padding: 3px;
+    align-items: center;
+}
+.contenidoInterest21 {
+    height: auto;
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
+.contenidoInterest22 {
+    text-align: center;
+}
+.contenidoInterest23 {
+    text-align: center;
+    padding: 4px;
+    border: 3px #62FC47 solid;
+    border-radius: 25px;
+    box-shadow: 10px 7px 25px red;
+    margin: 15px;
+}
+.contenidoInterest3 {
+    grid-area: "item3Interest";
+    display: flex;
+    flex-direction: column;
+    border: 1px #62FC47 solid;
+    padding: 3px;
+    align-items: center;
+}
+.contenidoInterest31 {
+    height: auto;
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
+.contenidoInterest32 {
+    text-align: center;
+}
+.contenidoInterest33 {
+    text-align: center;
+    padding: 4px;
+    border: 3px #62FC47 solid;
+    border-radius: 25px;
+    box-shadow: 10px 7px 25px red;
+    margin: 15px;
+}
+.contenidoInterest4 {
+    grid-area: "item2Interest";
+    display: flex;
+    flex-direction: column;
+    border: 1px #62FC47 solid;
+    padding: 3px;
+    align-items: center;
+}
+.contenidoInterest41 {
+    height: auto;
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
+.contenidoInterest42 {
+    text-align: center;
+}
+.contenidoInterest43 {
+    text-align: center;
+    padding: 4px;
+    border: 3px #62FC47 solid;
+    border-radius: 25px;
+    box-shadow: 10px 7px 25px red;
+    margin: 15px;
+}
+.contenidoInterest5 {
+    grid-area: "item5Interest";
+    display: flex;
+    flex-direction: column;
+    border: 1px #62FC47 solid;
+    padding: 3px;
+    align-items: center;
+}
+.contenidoInterest51 {
+    height: auto;
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
+.contenidoInterest52 {
+    text-align: center;
+}
+.contenidoInterest53 {
+    text-align: center;
+    padding: 4px;
+    border: 3px #62FC47 solid;
+    border-radius: 25px;
+    box-shadow: 10px 7px 25px red;
+    margin: 15px;
+}
+.contenidoInterest6 {
+    grid-area: "item2Interest";
+    display: flex;
+    flex-direction: column;
+    border: 1px #62FC47 solid;
+    padding: 3px;
+    align-items: center;
+}
+.contenidoInterest61 {
+    height: auto;
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
+.contenidoInterest62 {
+    text-align: center;
+}
+.contenidoInterest63 {
+    text-align: center;
+    padding: 4px;
+    border: 3px #62FC47 solid;
+    border-radius: 25px;
+    box-shadow: 10px 7px 25px red;
+    margin: 15px;
+}
+.contenidoInterest7 {
+    grid-area: "item2Interest";
+    display: flex;
+    flex-direction: column;
+    border: 1px #62FC47 solid;
+    padding: 3px;
+    align-items: center;
+}
+.contenidoInterest71 {
+    height: auto;
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
+.contenidoInterest72 {
+    text-align: center;
+}
+.contenidoInterest73 {
+    text-align: center;
+    padding: 4px;
+    border: 3px #62FC47 solid;
+    border-radius: 25px;
+    box-shadow: 10px 7px 25px red;
+    margin: 15px;
+}
+.contenidoInterest8 {
+    grid-area: "item2Interest";
+    display: flex;
+    flex-direction: column;
+    border: 1px #62FC47 solid;
+    padding: 3px;
+    align-items: center;
+}
+.contenidoInterest81 {
+    height: auto;
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
+.contenidoInterest82 {
+    text-align: center;
+}
+.contenidoInterest83 {
+    text-align: center;
+    padding: 4px;
+    border: 3px #62FC47 solid;
+    border-radius: 25px;
+    box-shadow: 10px 7px 25px red;
+    margin: 15px;
+}
+
+/* Aviso */
+
+.sectionAviso {
+    grid-area: "aviso";
+    height: auto;
+}
+.aviso {
+    padding: 5px;
+    line-height: 30px;
+    margin: 15px;
+    border: solid;
+    color: crimson;
+    animation-name: atencion; 
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes atencion {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
 
 /* Footer */
 
@@ -138,4 +399,106 @@ a:hover {
     font-size: 30px;
     line-height: 40px;
     box-shadow: 0 0 5px black;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        grid-template-rows: 60px auto auto  auto 70px;
+    }
+    header nav {
+        font-size: 15px;
+    }
+    .logo .logoImagen {
+        font-size: 25px;
+    }
+    .logo p {
+        font-size: 10px;
+    }
+    .lista li:hover > ul {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .footerRedes {
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+    .footerCopy {
+        color: red;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .lista li:hover > ul {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .contenidoBrokers {
+        grid-template-areas: 
+            "item1Brokers item2Brokers" 
+            "item3Brokers item4Brokers"
+            "item5Brokers item6Brokers";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contenidoInterest1 {
+        flex-direction: row;;
+    }
+    .contenidoInterest2 {
+        flex-direction: row;;
+    }
+    .contenidoInterest3 {
+        flex-direction: row;;
+    }
+    .contenidoInterest4 {
+        flex-direction: row;;
+    }
+    .contenidoInterest5 {
+        flex-direction: row;;
+    }
+    .contenidoInterest6 {
+        flex-direction: row;;
+    }
+    .contenidoInterest7 {
+        flex-direction: row;;
+    }
+    .contenidoInterest8 {
+        flex-direction: row;;
+    }
+
+    .aviso {
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header nav {
+        font-size: 20px;
+    }
+    .logo .logoImagen {
+        font-size: 30px;
+    }
+    .logo p {
+        font-size: 15px;
+    }
+    .lista li:hover > ul {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .tituloMainInterest {
+        font-size: 40px;
+    }
+    .textoMainInterest {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .contenidoInterest {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .aviso {
+        font-size: 24px;
+    }
 }
