@@ -12,7 +12,8 @@ body {
     width: auto;
     padding: 3px;
     scroll-behavior: smooth;
-    background: linear-gradient(45deg,#051937,#5877CF,#6DEF9A,#A8EB12);
+    background-color: #212F3D;
+/*     background: linear-gradient(45deg,#051937,#5877CF,#6DEF9A,#A8EB12);
     background-size: 400% 400%;
     position: relative;
     animation: cambiar 7s ease-in-out infinite;
@@ -23,18 +24,345 @@ body {
     "section"
     "aviso"
     "pie";
-    grid-template-rows: 50px auto auto auto 70px;
+    grid-template-rows: 50px auto auto auto 70px; */
 }
 
-@keyframes cambiar{
+/* @keyframes cambiar{
     0%{background-position: 0 50%;}
     50%{background-position: 100% 50%;}
     100%{background-position: 0 50%;}
+} */
+
+/* COMIENZO BOOTSTRAP */
+/*----------------------------------------------------------------------------------------------*/
+a:hover {
+    color:black;
+    background-color: white;
 }
+/*----------------------------------------------------------------------------------------------*/
+/* COMIENZO HEADER */
+.headerIndex .navbar {
+    background-color: transparent !important;
+}
+.navbar {
+    width: 100%;
+    margin: 0;
+    border-bottom: 2px solid #B7EE0A; 
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(183, 238, 10,.9);
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(183, 238, 10,.9);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(183, 238, 10,.9);
+}
+.dropdown-menu {
+    background-color: #212F3D;
+}
+.dropdown-item {
+    color: #B7EE0A;
+}
+.logo {
+    text-align: center;
+}
+.logo .logoImagen a{
+    font-size: 20px;
+    color: #B7EE0A;
+}
+.logoText {
+    font-size: 10px;
+    color: #B7EE0A;
+}
+/* FIN HEADER */
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Comienzo index---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO MAIN INDEX*/
+.jumbotron {
+    color: #B7EE0A;
+}
+.jumbotronIndex {
+    background-image: url(../imagen/pradera.jpg!d);
+    background-size: cover;
+    background-position: center;
+}
+.tituloIndex {
+    padding: 3px;
+    text-align: center;
+    text-decoration: underline;
+    animation: bounce; 
+    animation-duration: 2s;
+    text-shadow: 0 0 5px white;;
+}
+.subIndex {
+    padding: 3px;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0 0 5px white;;
+}
+/*FIN MAIN INDEX*/
+/*----------------------------------------------------------------------------------------------*/
+.subTitle {
+    text-align: center;
+    color: #B7EE0A; 
+    text-shadow: 0 0 5px white;
+}
+/*----------------------------------------------------------------------------------------------*/
+/* COMIENZO SECTION INDEX*/
+.contenidoIndex {
+    text-align: center;
+    color: #B7EE0A; 
+    height: auto;
+}
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seccionesIndex {
+    text-shadow: 0 0 5px white; 
+}
+.more {
+    padding: 15px;
+}
+.contenidoIndex a {
+    padding: 10px;
+    border: 1px #B7EE0A solid;
+    border-radius: 25px;
+    box-shadow: 0 0 5px white;
+    margin: 15px;
+}
+.contenidoIndex a:hover {
+    color:black;
+    background-color: white;
+}
+/* FIN SECTION INDEX*/
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Fin Index--------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Comienzo Binarias---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO MAIN BINARIAS*/
+.jumbotronBinarias {
+    background-image: url(../imagen/binariasSaturno.jpg!d);
+    background-size: cover;
+    background-position: center;
+}
+.tituloBinarias {
+    padding: 3px;
+    text-align: center;
+    text-decoration: underline;
+    animation: bounce; 
+    animation-duration: 2s;
+    text-shadow: 0 0 5px white;;
+}
+.subBinarias {
+    padding: 3px;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 0 0 5px white;;
+}
+/*FIN MAIN BINARIAS*/
+/*----------------------------------------------------------------------------------------------*/
+/* COMIENZO SECTION BINARIAS */
+.sectionBinarias {
+    text-align: center;
+    color: #B7EE0A; 
+    height: auto
+}
+.parrafoBienarias {
+    padding: 3px;
+    line-height: 20px;
+    height: 540px;
+}
+.imagen1Binarias {
+    padding: 15px;
+    background-image: url(../imagen/imagen1Binarias.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin: 20px;
+}
+.imagen2Binarias {
+    padding: 15px;
+    background-image: url(../imagen/imagen2Binarias.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin: 20px;
+}
+/* FIN SECTION BINARIAS */
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Fin Binarias---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/* COMIENZO ARTICLE */
+.aviso {
+    padding: 5px;
+    line-height: 30px;
+    margin: 15px;
+    border: solid;
+    box-shadow: 0 0 5px white;
+    color: #B7EE0A;
+    animation-name: atencion; 
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes atencion {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* FIN ARTICLE */
+/*----------------------------------------------------------------------------------------------*/
+/* COMIENZO FOOTER */
+.footer {
+    border-top: 1px #B7EE0A solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    height: auto;
+}
+
+.barra ul li {
+    list-style: none;
+}
+.barra ul li a {
+    color: #B7EE0A;
+    text-decoration: none;
+    font-size: 10px;
+}
+.barra a:hover {
+    color:black;
+    background-color: white;
+}
+.footerRedes {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+.footerRedes i:hover {
+    color:black;
+    background-color: white;
+}
+.fa-brands {
+    color: #B7EE0A !important;
+}
+.footerCopy {
+    color: red;
+    font-size: 10px;
+}
+/* FIN FOOTER */
+/*----------------------------------------------------------------------------------------------*/
+/* FIN BOOTSTRAP */
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Media Querys---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+    .fa-solid {
+        font-size: 25px;
+    }
+    .logo p {
+        font-size: 10px;
+    }
+    /* Binarias */
+    .imagen1Binarias {
+        margin: 0px;
+        height: 400px;
+    }
+    .imagen2Binarias {
+        margin: 0px;
+        height: 400px;
+    }
+    .barra ul li a {
+        font-size: 15px;
+    }
+    .aviso {
+        font-size: 23px;
+    }
+    .footerRedes {
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+    .footerCopy {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        font-size: 20px;
+    }
+
+    /* Index */
+    .tituloIndex{
+        font-size: 45px;
+    }
+    .subIndex{
+        font-size: 35px;
+    }
+    .subSubIndex {
+        font-size: 30px;
+    }
+    .textoMainIndex {
+        font-size: 20px;
+    }
+    .subTitle {
+        font-size: 35px;
+    }
+    .seccionesIndex {
+        font-size: 35px;
+    }
+    .contenidoIndex a {
+        font-size: 20px;
+    }
+    /* Binarias */
+    .tituloBinarias {
+        font-size: 45px;
+    }
+    .subBinarias {
+        font-size: 35px;
+    }
+    .parrafoBinarias {
+        font-size: 20px;
+    }
+    .imagen1Binarias {
+        height: 430px;
+    }
+    .imagen2Binarias {
+        height: 430px;
+    }
+    .textoAviso {
+        font-size: 18px;
+    }
+    .fa-solid {
+        font-size: 45px;
+    }
+    .logo p {
+        font-size: 20px;
+    }
+}
+/* @media screen and (min-width: 1024px) {} */
+
+
+
+
 
 /* Header */
 
-header {
+/* header {
     grid-area: "encabezado";
     border-bottom: #62FC47 solid;
     height: 100%;
@@ -99,11 +427,11 @@ a:hover {
     float: left;
     padding: 7px;
     font-size: 10px;
-}
+} */
 
 /* Main Index */
 
-.mainIndex {
+/* .mainIndex {
     grid-area: "inicio";
     height: auto;
     padding: 5px;
@@ -133,7 +461,7 @@ a:hover {
 }
 
 /* Contenido Index */
-.contenidoIndex {
+/* .contenidoIndex {
     grid-area: "section";
     height: auto;
     display: grid;
@@ -242,7 +570,7 @@ a:hover {
 
 /* Aviso */
 
-.sectionAviso {
+/* .sectionAviso {
     grid-area: "aviso";
     height: auto;
 }
@@ -265,11 +593,11 @@ a:hover {
     to {
         opacity: 1;
     }
-} 
+}   */ 
 
 /* Footer */
 
-.footer {
+/* .footer {
     grid-area: "pie";
     border-top: #62FC47 solid;
     display: flex;
@@ -298,7 +626,7 @@ a:hover {
 
 /* Boton */
 
-.subir {
+/* .subir {
     height: 40px;
     width: 40px;
     position: fixed;
@@ -425,5 +753,5 @@ a:hover {
     .aviso {
     font-size: 24px;
     }
-}
+}  */
 
