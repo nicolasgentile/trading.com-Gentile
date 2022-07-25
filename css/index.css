@@ -132,8 +132,9 @@ a:hover {
     padding: 10px;
     border: 1px #B7EE0A solid;
     border-radius: 25px;
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px white; 
     margin: 15px;
+    background-color: #B7EE0A;
 }
 .contenidoIndex a:hover {
     color:black;
@@ -197,7 +198,47 @@ a:hover {
 }
 /* FIN SECTION BINARIAS */
 /*----------------------------------------------------------------------------------------------*/
-/*-----------------------------------Fin Binarias---------------------------------------------*/
+/*-------------------------------------Fin Binarias---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Comienzo Brokers-------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO MAIN BROKERS*/
+.jumbotronBrokers {
+    background-image: url(../imagen/brokersCamino.jpg!d);
+    background-size: cover;
+    background-position: center;
+}
+.tituloMainBrokers {
+    padding: 3px;
+    text-align: center;
+    text-decoration: underline;
+    animation: bounce; 
+    animation-duration: 2s;
+    text-shadow: 0 0 5px white;;
+}
+/*FIN MAIN BROKERS*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO SECTION BROKERS*/
+/* .sectionBrokers {
+
+} */
+.item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+.card {
+    background-color: #212F3D;
+    color: #B7EE0A;
+    border: 1px solid #B7EE0A;
+    box-shadow: 0 0 5px white;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------Fin Brokers----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 /* COMIENZO ARTICLE */
 .aviso {
@@ -344,6 +385,18 @@ a:hover {
     .imagen2Binarias {
         height: 430px;
     }
+
+    /*Brokers*/
+    .tituloMainBrokers {
+        font-size: 45px;
+    }
+    .textoMainBrokers {
+        font-size: 20px;
+    }
+    .card-text {
+        font-size: 20px;
+    }
+
     .textoAviso {
         font-size: 18px;
     }
@@ -354,7 +407,12 @@ a:hover {
         font-size: 20px;
     }
 }
-/* @media screen and (min-width: 1024px) {} */
+
+@media screen and (min-width: 1150px) {
+    .card {
+        margin: 30px;
+    }
+}
 
 
 
