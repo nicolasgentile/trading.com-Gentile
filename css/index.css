@@ -304,11 +304,73 @@ a:hover {
 /*----------------------------------------------------------------------------------------------*/
 /*-------------------------------------Comienzo Contact----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
+/*COMIENZO MAIN CONTACT*/
+.jumbotronContact {
+    background-image: url(../imagen/fondoContacto.jpg!d);
+    background-size: cover;
+    background-position: center;
+}
+.tituloMainContact {
+    padding: 3px;
+    text-align: center;
+    text-decoration: underline;
+    animation: bounce; 
+    animation-duration: 2s;
+    text-shadow: 0 0 5px white;;
+}
+.textoMainContact {
+    padding: 3px;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 0 0 5px white;
+}
 
 
+/*FIN MAIN CONTACT*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO FORMULARIO*/
+.formularioContact {
+    height: auto;
+    padding: 10px;
+    border: 3px #B7EE0A solid;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 25px;
+    margin: 15px;
+    color: #B7EE0A;
+}
+input:focus {
+	Color: black;
+    background-color: white;
+}
+.tituloFormulario {
+    text-align: center;
+    padding: 3px;
+    text-decoration: underline;
+    text-shadow: 0 0 5px white;
+}
+.form-control {
+    background-color: transparent;
+    padding: 7px;
+    margin: 10px;
+    border: 2px #B7EE0A solid;
+    width: 90%;
+}
+.btn {
+    background-color: transparent;
+    padding: 7px;
+    margin: 10px;
+    border: 2px #B7EE0A solid;
+    color: #B7EE0A;
+}
+
+.btn:hover {
+    color:black;
+    background-color: white;
+    border: 2px #62FC47 solid;
+}
 
 
-
+/*FIN FORMULARIO*/
 /*----------------------------------------------------------------------------------------------*/
 /*-------------------------------------Fin Contact----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
@@ -481,6 +543,16 @@ a:hover {
         font-size: 20px;
     }
     .contenidoInterestDescripcion {
+        font-size: 20px;
+    }
+    /*Contact*/
+    .tituloMainContact {
+        font-size: 45px;
+    }
+    .textoMainContact {
+        font-size: 20px;
+    }
+    .formularioContact {
         font-size: 20px;
     }
 
