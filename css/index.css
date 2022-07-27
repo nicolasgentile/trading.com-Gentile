@@ -130,11 +130,12 @@ a:hover {
 }
 .contenidoIndex a {
     padding: 10px;
-    border: 1px #B7EE0A solid;
     border-radius: 25px;
     box-shadow: 0 0 5px white; 
     margin: 15px;
-    background-color: #B7EE0A;
+    border: 3px #62FC47 solid;
+    color: #62FC47;
+    text-shadow: 10px 7px 25px white;
 }
 .contenidoIndex a:hover {
     color:black;
@@ -220,9 +221,6 @@ a:hover {
 /*FIN MAIN BROKERS*/
 /*----------------------------------------------------------------------------------------------*/
 /*COMIENZO SECTION BROKERS*/
-/* .sectionBrokers {
-
-} */
 .item {
     margin-left: auto;
     margin-right: auto;
@@ -234,11 +232,85 @@ a:hover {
     border: 1px solid #B7EE0A;
     box-shadow: 0 0 5px white;
 }
+.card-text a {
+    color: #62FC47;
+    text-shadow: 10px 7px 25px white;
+}
+.card-text a:hover {
+    color:black;
+    background-color: white;
+}
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------Fin Brokers----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Comienzo Interest-------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO MAIN INTEREST*/
+.jumbotronInterest {
+    background-image: url(../imagen/fondoInterest.jpg!d);
+    background-size: cover;
+    background-position: center;
+}
+.tituloMainInterest {
+    padding: 3px;
+    text-align: center;
+    text-decoration: underline;
+    animation: bounce; 
+    animation-duration: 2s;
+    text-shadow: 0 0 5px white;;
+}
+.textoMainInterest {
+    padding: 3px;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 0 0 5px white;;
+}
+/*FIN MAIN INTEREST*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO SECTION INTEREST*/
+.contenidoInterest {
+    height: auto;
+
+}
+.itemInterest {
+    border: 1px solid #B7EE0A;
+    box-shadow: 0 0 5px white;
+}
+.contenidoInterestLogo{
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
+.contenidoInterestDescripcion {
+    text-align: center;
+    color: #B7EE0A;
+}
+.contenidoInterestCanal {
+    text-align: center;
+    padding: 5px;
+    border: 3px #62FC47 solid;
+    border-radius: 25px;
+    box-shadow: 10px 7px 25px white;
+    margin: 15px;
+    color: #62FC47;
+    text-shadow: 10px 7px 25px white;
+}
+
+
+/*FIN SECTION INTEREST*/
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------Fin Interest----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------Comienzo Contact----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+
 
 
 
 /*----------------------------------------------------------------------------------------------*/
-/*-------------------------------------Fin Brokers----------------------------------------------*/
+/*-------------------------------------Fin Contact----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 /* COMIENZO ARTICLE */
 .aviso {
@@ -340,6 +412,10 @@ a:hover {
     .footerCopy {
         font-size: 15px;
     }
+    /* Interest */
+    .itemInterest {
+        margin: 20px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -394,6 +470,17 @@ a:hover {
         font-size: 20px;
     }
     .card-text {
+        font-size: 20px;
+    }
+
+    /*Interesst*/
+    .tituloMainInterest {
+        font-size: 45px;
+    }
+    .textoMainInterest {
+        font-size: 20px;
+    }
+    .contenidoInterestDescripcion {
         font-size: 20px;
     }
 
