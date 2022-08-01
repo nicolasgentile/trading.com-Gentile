@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+/*C:\Users\Usuario
+
+C:\Users\Usuario>cd Desktop
+
+C:\Users\Usuario\Desktop>cd root
+
+C:\Users\Usuario\Desktop\root>sass --watch css/estilos.scss css/index.css*/
+
+$color1: #8D1029;
+$color2: #16080E;
+$color3: white;
+$fontSize1: 1rem;
+$fontFamily: 'Oxygen', sans-serif;
+$borderRadius: 0.25rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    width: auto;
+    padding: 3px;
+    scroll-behavior: smooth;
+    background-color: $color2;
+/*     background: linear-gradient(45deg,#051937,#5877CF,#6DEF9A,#A8EB12);
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 7s ease-in-out infinite;
+    display: grid;
+    grid-template-areas: 
+    "encabezado" 
+    "inicio"
+    "section"
+    "aviso"
+    "pie";
+    grid-template-rows: 50px auto auto auto 70px; */
+}
+
+/* @keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+} */
+
+/* COMIENZO BOOTSTRAP */
+/*----------------------------------------------------------------------------------------------*/
+a:hover {
+    color: $color3;
+    background-color: $color1;
+}
+/*----------------------------------------------------------------------------------------------*/
+/* COMIENZO HEADER */
+.headerIndex .navbar {
+    background-color: transparent !important;
+    font-size: $fontSize1;
+}
+.navbar {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid $color3;
+    box-shadow: 0 0 5px $color3;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: $color1;
+    text-shadow: 0 0 5px $color1;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: $color3;
+    text-shadow: 0 0 5px $color1;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $color3;
+    background-color: $color1;
+    text-shadow: 0 0 5px $color3;
+}
+.dropdown-menu {
+    background-color: $color2;
+}
+.dropdown-item {
+    color: $color1;
+    text-shadow: 0 0 5px $color1;
+}
+.logo {
+    text-align: center;
+}
+.logo .logoImagen a{
+    font-size: 20px;
+    color: $color1;
+    text-shadow: 0 0 5px $color1;
+}
+.logoText {
+    font-size: $fontSize1;
+    color: $color3;
+    text-shadow: 0 0 5px $color3;
+}
+.logoText .realidad {
+    color: $color1;
+    text-shadow: 0 0 5px $color1;
+}
+.navbar-light .navbar-toggler {
+    border-color: $color3;
+    box-shadow: 0 0 5px $color3;
+    background-color: $color1;
+}
+
+/* FIN HEADER */
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Comienzo index---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO MAIN INDEX*/
+.jumbotron {
+    background-image: url(../imagen/fondo19.jpg);
+    border-image: $borderRadius;
+    color: $color3;
+    text-shadow: 0 0 5px $color3;
+    .titulo {
+        color: $color1;
+        padding: 3px;
+        text-align: center;
+        text-decoration: underline;
+        animation: bounce; 
+        animation-duration: 2s;
+        text-shadow: 0 0 5px $color1;
+    }
+    .subIndex {
+        padding: 3px;
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+/* .jumbotronIndex {
+    background-image: url(../imagen/fondo19.jpg);
+    background-size: cover;
+    background-position: center;
+    border-image: $borderRadius;
+} */
+
+/*FIN MAIN INDEX*/
+/*----------------------------------------------------------------------------------------------*/
+.subTitle {
+    text-align: center;
+    color: $color1; 
+    text-shadow: 0 0 4px $color1;
+    border: 1px solid $color3;
+    border-radius: $borderRadius;
+    box-shadow: 0 0 5px $color3;
+}
+/*----------------------------------------------------------------------------------------------*/
+/* COMIENZO SECTION INDEX*/
+.contenidoIndex {
+    text-align: center;
+    color: $color1; 
+    height: auto;
+    text-shadow: 0 0 5px $color1;
+}
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more {
+    padding: 15px;
+}
+.contenidoIndex a {
+    background-color: $color1;
+    padding: 10px;
+    border-radius: $borderRadius;
+    line-height: 1.5;
+    box-shadow: 0 0 5px $color3; 
+    margin: 15px;
+    border: 1px $color3 solid;
+    color: $color3;
+    text-shadow: 0 0 5px $color3;
+}
+.contenidoIndex a:hover {
+    color: $color2;
+    background-color: $color3;
+}
+/* FIN SECTION INDEX*/
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Fin Index--------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Comienzo Binarias---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO MAIN BINARIAS*/
+.jumbotronBinarias {
+    background-image: url(../imagen/fondo19.jpg);
+/*     background-size: cover;
+    background-position: center; */
+    .subBinarias {
+    padding: 3px;
+    text-decoration: underline;
+    text-align: center;
+    }
+}
+/*FIN MAIN BINARIAS*/
+/*----------------------------------------------------------------------------------------------*/
+/* COMIENZO SECTION BINARIAS */
+.sectionBinarias {
+    text-align: center;
+    color: $color3; 
+    height: auto;
+    text-shadow: 0 0 5px $color3;
+}
+.parrafoBienarias {
+    padding: 3px;
+    line-height: 20px;
+    height: 540px;
+}
+.pBinarias strong {
+    color: $color1;
+    text-shadow: 0 0 5px $color1;
+}
+.imagen1Binarias {
+    padding: 15px;
+    background-image: url(../imagen/imagen1Binarias.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid $color1;
+    border-radius: $borderRadius;
+    box-shadow: 0 0 5px $color1;
+}
+.imagen2Binarias {
+    padding: 15px;
+    background-image: url(../imagen/imagen2Binarias.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid $color1;
+    border-radius: $borderRadius;
+    box-shadow: 0 0 5px $color1;
+}
+/* FIN SECTION BINARIAS */
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------Fin Binarias---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Comienzo Brokers-------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO MAIN BROKERS*/
+/* .jumbotronBrokers {
+    background-image: url(../imagen/fondo8.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+/*FIN MAIN BROKERS*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO SECTION BROKERS*/
+.item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    .cardViolet {
+        background-color: $color1;
+        text-shadow: 0 0 5px $color3;
+        color: $color3;
+        border: 1px solid $color3;
+        box-shadow: 0 0 5px $color3;
+        border-radius: $borderRadius;
+    }
+    .cardBlack {
+    /*     background-image: url(../imagen/fondo9.jpg); */
+        background-color: $color2;
+        text-shadow: 0 0 5px $color1;
+        color: $color1;
+        border: 1px solid $color1;
+        box-shadow: 0 0 5px $color1;
+        border-radius: $borderRadius;
+    }
+    .card-text a {
+        color: red;
+        text-shadow: 10px 7px 25px red;
+    }
+    .card-text a:hover {
+        color:$color1;
+        background-color: $color3;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------Fin Brokers----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Comienzo Interest-------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO MAIN INTEREST*/
+
+/* .jumbotronInterest {
+    background-color: transparent;
+} */
+.textoMainInterest {
+    padding: 3px;
+    text-decoration: underline;
+    text-align: center;
+}
+/*FIN MAIN INTEREST*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO SECTION INTEREST*/
+.contenidoInterest {
+    height: auto;
+}
+.itemInt {
+    margin: 1rem;
+}
+.itemInterestViolet {
+    background-color: $color1;
+    border: 1px solid $color3;
+    box-shadow: 0 0 5px $color3;
+    color: $color3;
+    text-shadow: 0 0 5px $color3;
+    text-align: left;
+    border-radius: $borderRadius;
+}
+.contenidoInterestLogo{
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
+.itemInterestViolet .contenidoInterestCanal {
+    text-align: center;
+    padding: 10px;
+    border: 1px $color3 solid;
+    border-radius: $borderRadius;
+    box-shadow: 0 0 5px $color3;
+    margin: 15px;
+    color: $color3;
+    text-shadow: 0 0 5px $color3;
+    line-height: 1.5;
+    width: 10rem;
+}
+.itemInterestViolet .contenidoInterestCanal a {
+    color: red;
+    text-shadow: 0 0 5px red;
+}
+.itemInterestBlack {
+    background-color: $color2;
+    border: 1px solid $color1;
+    box-shadow: 0 0 5px $color1;
+    color: $color1;
+    text-shadow: 0 0 5px $color1;
+    text-align: left;
+    border-radius: $borderRadius;
+}
+.itemInterestBlack .contenidoInterestCanal {
+    text-align: center;
+    padding: 10px;
+    border: 1px $color1 solid;
+    border-radius: $borderRadius;
+    box-shadow: 0 0 5px $color1;
+    margin: 15px;
+    color: $color1;
+    text-shadow: 0 0 5px $color1;
+    line-height: 1.5;
+    width: 10rem;
+}
+.itemInterestBlack .contenidoInterestCanal a {
+    color: red;
+    text-shadow: 0 0 5px red;
+}
+/*FIN SECTION INTEREST*/
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------Fin Interest----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------Comienzo Contact----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO MAIN CONTACT*/
+.jumbotronContact {
+    background-image: url(../imagen/fondo19.jpg);
+/*     background-size: cover;
+    background-position: center; */
+    .textoMainContact {
+        padding: 3px;
+        text-decoration: underline;
+        text-align: center;
+    }
+}
+
+/*FIN MAIN CONTACT*/
+/*----------------------------------------------------------------------------------------------*/
+/*COMIENZO FORMULARIO*/
+.formularioContact {
+    height: auto;
+    padding: 10px;
+    border: 1px $color1 solid;
+    box-shadow: 0px 0px 10px $color3;
+    border-radius: 25px;
+    margin: 15px;
+    color: $color1;
+}
+input:focus {
+	Color: black;
+    background-color: white;
+}
+.tituloFormulario {
+    text-align: center;
+    padding: 3px;
+    text-decoration: underline;
+    text-shadow: 0 0 5px $color1;
+}
+.form-control {
+    background-color: transparent;
+    padding: 7px;
+    margin: 10px;
+    border: 1px $color1 solid;
+    width: 90%;
+}
+.btn {
+    background-color: $color1;
+    padding: 7px;
+    margin: 10px;
+    border: 1px $color3 solid;
+    color: $color3;
+}
+
+.btn:hover {
+    color:$color1;
+    background-color: white;
+    border: 2px $color1 solid;
+}
+
+/*FIN FORMULARIO*/
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------Fin Contact----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/* COMIENZO ARTICLE */
+.aviso {
+    background-color: $color3;
+    padding: 5px;
+    line-height: 30px;
+    margin: 15px;
+    border: 1px $color1 solid;
+    box-shadow: 0 0 5px white;
+    color: $color1;
+    text-shadow: 0 0 5px $color1;
+    animation-name: atencion; 
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes atencion {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* FIN ARTICLE */
+/*----------------------------------------------------------------------------------------------*/
+/* COMIENZO FOOTER */
+.footer {
+    border-top: 1px $color3 solid;
+    box-shadow: 0 0 5px $color3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    height: auto;
+}
+
+.barra ul li {
+    list-style: none;
+}
+.barra ul li a {
+    color: $color3;
+    text-decoration: none;
+    font-size: 10px;
+    text-shadow: 0 0 5px $color1;
+}
+.barra a:hover {
+    color: $color3;
+    background-color: $color1;
+}
+.footerRedes {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+.footerRedes i:hover {
+    color: $color2;
+    background-color: $color3;
+}
+.fa-brands {
+    color: $color1 !important;
+    text-shadow: 0 0 5px $color1;
+}
+.footerCopy {
+    color: red;
+    font-size: 10px;
+    text-shadow: 0 0 5px red;
+}
+/* FIN FOOTER */
+/*----------------------------------------------------------------------------------------------*/
+/* FIN BOOTSTRAP */
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------Media Querys---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+    .fa-solid {
+        font-size: 25px;
+    }
+    .logo p {
+        font-size: 1rem;
+    }
+    /* Binarias */
+    .imagen1Binarias {
+        margin: 0px;
+        height: 400px;
+    }
+    .imagen2Binarias {
+        margin: 0px;
+        height: 400px;
+    }
+    .barra ul li a {
+        font-size: $fontSize1;
+    }
+    .aviso {
+        font-size: 23px;
+    }
+    .footerRedes {
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+    .footerCopy {
+        font-size: $fontSize1;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        font-size: 20px;
+    }
+
+    /* Index */
+    .titulo{
+        font-size: 45px;
+    }
+    .subIndex{
+        font-size: 35px;
+    }
+    .subSubIndex {
+        font-size: 30px;
+    }
+    .textoMainIndex {
+        font-size: 20px;
+    }
+    .subTitle {
+        font-size: 35px;
+    }
+    .seccionesIndex {
+        font-size: 35px;
+    }
+    .contenidoIndex a {
+        font-size: 20px;
+    }
+    /* Binarias */
+    .subBinarias {
+        font-size: 35px;
+    }
+    .parrafoBinarias {
+        font-size: 20px;
+    }
+    .imagen1Binarias {
+        height: 430px;
+    }
+    .imagen2Binarias {
+        height: 430px;
+    }
+    /*Brokers*/
+    .textoMainBrokers {
+        font-size: 20px;
+    }
+    .card-text {
+        font-size: 20px;
+    }
+    /*Interesst*/
+    .textoMainInterest {
+        font-size: 20px;
+    }
+    .contenidoInterestDescripcion {
+        font-size: 20px;
+    }
+    /*Contact*/
+    .textoMainContact {
+        font-size: 20px;
+    }
+    .formularioContact {
+        font-size: 20px;
+    }
+    .textoAviso {
+        font-size: 18px;
+    }
+    .fa-solid {
+        font-size: 45px;
+    }
+    .logo p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .card {
+        margin: 30px;
+    }
+}

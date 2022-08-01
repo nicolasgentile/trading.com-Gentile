@@ -1,30 +1,36 @@
-@import url('https://fonts.googleapis.com/css2? family= Anek+Latin:wght@200 & display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+/*C:\Users\Usuario
 
+C:\Users\Usuario>cd Desktop
+
+C:\Users\Usuario\Desktop>cd root
+
+C:\Users\Usuario\Desktop\root>sass --watch css/estilos.scss css/index.css*/
 * {
-    margin: 0;
-    padding: 0;
-    font-family: H'Anek Latin', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oxygen", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    height: auto;
-    width: auto;
-    padding: 3px;
-    scroll-behavior: smooth;
-    background-color: #212F3D;
-/*     background: linear-gradient(45deg,#051937,#5877CF,#6DEF9A,#A8EB12);
-    background-size: 400% 400%;
-    position: relative;
-    animation: cambiar 7s ease-in-out infinite;
-    display: grid;
-    grid-template-areas: 
-    "encabezado" 
-    "inicio"
-    "section"
-    "aviso"
-    "pie";
-    grid-template-rows: 50px auto auto auto 70px; */
+  height: auto;
+  width: auto;
+  padding: 3px;
+  scroll-behavior: smooth;
+  background-color: #16080E;
+  /*     background: linear-gradient(45deg,#051937,#5877CF,#6DEF9A,#A8EB12);
+      background-size: 400% 400%;
+      position: relative;
+      animation: cambiar 7s ease-in-out infinite;
+      display: grid;
+      grid-template-areas: 
+      "encabezado" 
+      "inicio"
+      "section"
+      "aviso"
+      "pie";
+      grid-template-rows: 50px auto auto auto 70px; */
 }
 
 /* @keyframes cambiar{
@@ -32,115 +38,158 @@ body {
     50%{background-position: 100% 50%;}
     100%{background-position: 0 50%;}
 } */
-
 /* COMIENZO BOOTSTRAP */
 /*----------------------------------------------------------------------------------------------*/
 a:hover {
-    color:black;
-    background-color: white;
+  color: white;
+  background-color: #8D1029;
 }
+
 /*----------------------------------------------------------------------------------------------*/
 /* COMIENZO HEADER */
 .headerIndex .navbar {
-    background-color: transparent !important;
+  background-color: transparent !important;
+  font-size: 1rem;
 }
+
 .navbar {
-    width: 100%;
-    margin: 0;
-    border-bottom: 2px solid #B7EE0A; 
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid white;
+  box-shadow: 0 0 5px white;
 }
-.navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
-    border-color: rgba(183, 238, 10,.9);
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #8D1029;
+  text-shadow: 0 0 5px #8D1029;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: rgba(183, 238, 10,.9);
-}
+
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(183, 238, 10,.9);
+  color: white;
+  text-shadow: 0 0 5px #8D1029;
 }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+  background-color: #8D1029;
+  text-shadow: 0 0 5px white;
+}
+
 .dropdown-menu {
-    background-color: #212F3D;
+  background-color: #16080E;
 }
+
 .dropdown-item {
-    color: #B7EE0A;
+  color: #8D1029;
+  text-shadow: 0 0 5px #8D1029;
 }
+
 .logo {
-    text-align: center;
+  text-align: center;
 }
-.logo .logoImagen a{
-    font-size: 20px;
-    color: #B7EE0A;
+
+.logo .logoImagen a {
+  font-size: 20px;
+  color: #8D1029;
+  text-shadow: 0 0 5px #8D1029;
 }
+
 .logoText {
-    font-size: 10px;
-    color: #B7EE0A;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 0 0 5px white;
 }
+
+.logoText .realidad {
+  color: #8D1029;
+  text-shadow: 0 0 5px #8D1029;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: white;
+  box-shadow: 0 0 5px white;
+  background-color: #8D1029;
+}
+
 /* FIN HEADER */
 /*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------Comienzo index---------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 /*COMIENZO MAIN INDEX*/
 .jumbotron {
-    color: #B7EE0A;
+  background-image: url(../imagen/fondo19.jpg);
+  border-image: 0.25rem;
+  color: white;
+  text-shadow: 0 0 5px white;
 }
-.jumbotronIndex {
-    background-image: url(../imagen/pradera.jpg!d);
+.jumbotron .titulo {
+  color: #8D1029;
+  padding: 3px;
+  text-align: center;
+  text-decoration: underline;
+  animation: bounce;
+  animation-duration: 2s;
+  text-shadow: 0 0 5px #8D1029;
+}
+.jumbotron .subIndex {
+  padding: 3px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* .jumbotronIndex {
+    background-image: url(../imagen/fondo19.jpg);
     background-size: cover;
     background-position: center;
-}
-.tituloIndex {
-    padding: 3px;
-    text-align: center;
-    text-decoration: underline;
-    animation: bounce; 
-    animation-duration: 2s;
-    text-shadow: 0 0 5px white;;
-}
-.subIndex {
-    padding: 3px;
-    text-align: center;
-    text-decoration: underline;
-    text-shadow: 0 0 5px white;;
-}
+    border-image: $borderRadius;
+} */
 /*FIN MAIN INDEX*/
 /*----------------------------------------------------------------------------------------------*/
 .subTitle {
-    text-align: center;
-    color: #B7EE0A; 
-    text-shadow: 0 0 5px white;
+  text-align: center;
+  color: #8D1029;
+  text-shadow: 0 0 4px #8D1029;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px white;
 }
+
 /*----------------------------------------------------------------------------------------------*/
 /* COMIENZO SECTION INDEX*/
 .contenidoIndex {
-    text-align: center;
-    color: #B7EE0A; 
-    height: auto;
+  text-align: center;
+  color: #8D1029;
+  height: auto;
+  text-shadow: 0 0 5px #8D1029;
 }
+
 .abs-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.seccionesIndex {
-    text-shadow: 0 0 5px white; 
-}
+
 .more {
-    padding: 15px;
+  padding: 15px;
 }
+
 .contenidoIndex a {
-    padding: 10px;
-    border-radius: 25px;
-    box-shadow: 0 0 5px white; 
-    margin: 15px;
-    border: 3px #62FC47 solid;
-    color: #62FC47;
-    text-shadow: 10px 7px 25px white;
+  background-color: #8D1029;
+  padding: 10px;
+  border-radius: 0.25rem;
+  line-height: 1.5;
+  box-shadow: 0 0 5px white;
+  margin: 15px;
+  border: 1px white solid;
+  color: white;
+  text-shadow: 0 0 5px white;
 }
+
 .contenidoIndex a:hover {
-    color:black;
-    background-color: white;
+  color: #16080E;
+  background-color: white;
 }
+
 /* FIN SECTION INDEX*/
 /*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------Fin Index--------------------------------------------------*/
@@ -150,53 +199,61 @@ a:hover {
 /*----------------------------------------------------------------------------------------------*/
 /*COMIENZO MAIN BINARIAS*/
 .jumbotronBinarias {
-    background-image: url(../imagen/binariasSaturno.jpg!d);
-    background-size: cover;
-    background-position: center;
+  background-image: url(../imagen/fondo19.jpg);
+  /*     background-size: cover;
+      background-position: center; */
 }
-.tituloBinarias {
-    padding: 3px;
-    text-align: center;
-    text-decoration: underline;
-    animation: bounce; 
-    animation-duration: 2s;
-    text-shadow: 0 0 5px white;;
+.jumbotronBinarias .subBinarias {
+  padding: 3px;
+  text-decoration: underline;
+  text-align: center;
 }
-.subBinarias {
-    padding: 3px;
-    text-decoration: underline;
-    text-align: center;
-    text-shadow: 0 0 5px white;;
-}
+
 /*FIN MAIN BINARIAS*/
 /*----------------------------------------------------------------------------------------------*/
 /* COMIENZO SECTION BINARIAS */
 .sectionBinarias {
-    text-align: center;
-    color: #B7EE0A; 
-    height: auto
+  text-align: center;
+  color: white;
+  height: auto;
+  text-shadow: 0 0 5px white;
 }
+
 .parrafoBienarias {
-    padding: 3px;
-    line-height: 20px;
-    height: 540px;
+  padding: 3px;
+  line-height: 20px;
+  height: 540px;
 }
+
+.pBinarias strong {
+  color: #8D1029;
+  text-shadow: 0 0 5px #8D1029;
+}
+
 .imagen1Binarias {
-    padding: 15px;
-    background-image: url(../imagen/imagen1Binarias.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    margin: 20px;
+  padding: 15px;
+  background-image: url(../imagen/imagen1Binarias.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  margin: 20px;
+  border: 1px solid #8D1029;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px #8D1029;
 }
+
 .imagen2Binarias {
-    padding: 15px;
-    background-image: url(../imagen/imagen2Binarias.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    margin: 20px;
+  padding: 15px;
+  background-image: url(../imagen/imagen2Binarias.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  margin: 20px;
+  border: 1px solid #8D1029;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px #8D1029;
 }
+
 /* FIN SECTION BINARIAS */
 /*----------------------------------------------------------------------------------------------*/
 /*-------------------------------------Fin Binarias---------------------------------------------*/
@@ -205,41 +262,45 @@ a:hover {
 /*-----------------------------------Comienzo Brokers-------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 /*COMIENZO MAIN BROKERS*/
-.jumbotronBrokers {
-    background-image: url(../imagen/brokersCamino.jpg!d);
+/* .jumbotronBrokers {
+    background-image: url(../imagen/fondo8.jpg);
     background-size: cover;
     background-position: center;
-}
-.tituloMainBrokers {
-    padding: 3px;
-    text-align: center;
-    text-decoration: underline;
-    animation: bounce; 
-    animation-duration: 2s;
-    text-shadow: 0 0 5px white;;
-}
+} */
 /*FIN MAIN BROKERS*/
 /*----------------------------------------------------------------------------------------------*/
 /*COMIENZO SECTION BROKERS*/
 .item {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
 }
-.card {
-    background-color: #212F3D;
-    color: #B7EE0A;
-    border: 1px solid #B7EE0A;
-    box-shadow: 0 0 5px white;
+.item .cardViolet {
+  background-color: #8D1029;
+  text-shadow: 0 0 5px white;
+  color: white;
+  border: 1px solid white;
+  box-shadow: 0 0 5px white;
+  border-radius: 0.25rem;
 }
-.card-text a {
-    color: #62FC47;
-    text-shadow: 10px 7px 25px white;
+.item .cardBlack {
+  /*     background-image: url(../imagen/fondo9.jpg); */
+  background-color: #16080E;
+  text-shadow: 0 0 5px #8D1029;
+  color: #8D1029;
+  border: 1px solid #8D1029;
+  box-shadow: 0 0 5px #8D1029;
+  border-radius: 0.25rem;
 }
-.card-text a:hover {
-    color:black;
-    background-color: white;
+.item .card-text a {
+  color: red;
+  text-shadow: 10px 7px 25px red;
 }
+.item .card-text a:hover {
+  color: #8D1029;
+  background-color: white;
+}
+
 /*----------------------------------------------------------------------------------------------*/
 /*-------------------------------------Fin Brokers----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
@@ -247,55 +308,86 @@ a:hover {
 /*-----------------------------------Comienzo Interest-------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 /*COMIENZO MAIN INTEREST*/
-.jumbotronInterest {
-    background-image: url(../imagen/fondoInterest.jpg!d);
-    background-size: cover;
-    background-position: center;
-}
-.tituloMainInterest {
-    padding: 3px;
-    text-align: center;
-    text-decoration: underline;
-    animation: bounce; 
-    animation-duration: 2s;
-    text-shadow: 0 0 5px white;;
-}
+/* .jumbotronInterest {
+    background-color: transparent;
+} */
 .textoMainInterest {
-    padding: 3px;
-    text-decoration: underline;
-    text-align: center;
-    text-shadow: 0 0 5px white;;
+  padding: 3px;
+  text-decoration: underline;
+  text-align: center;
 }
+
 /*FIN MAIN INTEREST*/
 /*----------------------------------------------------------------------------------------------*/
 /*COMIENZO SECTION INTEREST*/
 .contenidoInterest {
-    height: auto;
-
-}
-.itemInterest {
-    border: 1px solid #B7EE0A;
-    box-shadow: 0 0 5px white;
-}
-.contenidoInterestLogo{
-    animation: fadeInDown; 
-    animation-duration: 2s;
-}
-.contenidoInterestDescripcion {
-    text-align: center;
-    color: #B7EE0A;
-}
-.contenidoInterestCanal {
-    text-align: center;
-    padding: 5px;
-    border: 3px #62FC47 solid;
-    border-radius: 25px;
-    box-shadow: 10px 7px 25px white;
-    margin: 15px;
-    color: #62FC47;
-    text-shadow: 10px 7px 25px white;
+  height: auto;
 }
 
+.itemInt {
+  margin: 1rem;
+}
+
+.itemInterestViolet {
+  background-color: #8D1029;
+  border: 1px solid white;
+  box-shadow: 0 0 5px white;
+  color: white;
+  text-shadow: 0 0 5px white;
+  text-align: left;
+  border-radius: 0.25rem;
+}
+
+.contenidoInterestLogo {
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+
+.itemInterestViolet .contenidoInterestCanal {
+  text-align: center;
+  padding: 10px;
+  border: 1px white solid;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px white;
+  margin: 15px;
+  color: white;
+  text-shadow: 0 0 5px white;
+  line-height: 1.5;
+  width: 10rem;
+}
+
+.itemInterestViolet .contenidoInterestCanal a {
+  color: red;
+  text-shadow: 0 0 5px red;
+}
+
+.itemInterestBlack {
+  background-color: #16080E;
+  border: 1px solid #8D1029;
+  box-shadow: 0 0 5px #8D1029;
+  color: #8D1029;
+  text-shadow: 0 0 5px #8D1029;
+  text-align: left;
+  border-radius: 0.25rem;
+}
+
+.itemInterestBlack .contenidoInterestCanal {
+  text-align: center;
+  padding: 10px;
+  border: 1px #8D1029 solid;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px #8D1029;
+  margin: 15px;
+  color: #8D1029;
+  text-shadow: 0 0 5px #8D1029;
+  line-height: 1.5;
+  width: 10rem;
+}
+
+.itemInterestBlack .contenidoInterestCanal a {
+  color: red;
+  text-shadow: 0 0 5px red;
+}
 
 /*FIN SECTION INTEREST*/
 /*----------------------------------------------------------------------------------------------*/
@@ -306,69 +398,62 @@ a:hover {
 /*----------------------------------------------------------------------------------------------*/
 /*COMIENZO MAIN CONTACT*/
 .jumbotronContact {
-    background-image: url(../imagen/fondoContacto.jpg!d);
-    background-size: cover;
-    background-position: center;
+  background-image: url(../imagen/fondo19.jpg);
+  /*     background-size: cover;
+      background-position: center; */
 }
-.tituloMainContact {
-    padding: 3px;
-    text-align: center;
-    text-decoration: underline;
-    animation: bounce; 
-    animation-duration: 2s;
-    text-shadow: 0 0 5px white;;
+.jumbotronContact .textoMainContact {
+  padding: 3px;
+  text-decoration: underline;
+  text-align: center;
 }
-.textoMainContact {
-    padding: 3px;
-    text-decoration: underline;
-    text-align: center;
-    text-shadow: 0 0 5px white;
-}
-
 
 /*FIN MAIN CONTACT*/
 /*----------------------------------------------------------------------------------------------*/
 /*COMIENZO FORMULARIO*/
 .formularioContact {
-    height: auto;
-    padding: 10px;
-    border: 3px #B7EE0A solid;
-    box-shadow: 0px 0px 10px white;
-    border-radius: 25px;
-    margin: 15px;
-    color: #B7EE0A;
+  height: auto;
+  padding: 10px;
+  border: 1px #8D1029 solid;
+  box-shadow: 0px 0px 10px white;
+  border-radius: 25px;
+  margin: 15px;
+  color: #8D1029;
 }
+
 input:focus {
-	Color: black;
-    background-color: white;
+  Color: black;
+  background-color: white;
 }
+
 .tituloFormulario {
-    text-align: center;
-    padding: 3px;
-    text-decoration: underline;
-    text-shadow: 0 0 5px white;
+  text-align: center;
+  padding: 3px;
+  text-decoration: underline;
+  text-shadow: 0 0 5px #8D1029;
 }
+
 .form-control {
-    background-color: transparent;
-    padding: 7px;
-    margin: 10px;
-    border: 2px #B7EE0A solid;
-    width: 90%;
+  background-color: transparent;
+  padding: 7px;
+  margin: 10px;
+  border: 1px #8D1029 solid;
+  width: 90%;
 }
+
 .btn {
-    background-color: transparent;
-    padding: 7px;
-    margin: 10px;
-    border: 2px #B7EE0A solid;
-    color: #B7EE0A;
+  background-color: #8D1029;
+  padding: 7px;
+  margin: 10px;
+  border: 1px white solid;
+  color: white;
 }
 
 .btn:hover {
-    color:black;
-    background-color: white;
-    border: 2px #62FC47 solid;
+  color: #8D1029;
+  background-color: white;
+  border: 2px #8D1029 solid;
 }
-
 
 /*FIN FORMULARIO*/
 /*----------------------------------------------------------------------------------------------*/
@@ -376,67 +461,81 @@ input:focus {
 /*----------------------------------------------------------------------------------------------*/
 /* COMIENZO ARTICLE */
 .aviso {
-    padding: 5px;
-    line-height: 30px;
-    margin: 15px;
-    border: solid;
-    box-shadow: 0 0 5px white;
-    color: #B7EE0A;
-    animation-name: atencion; 
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+  background-color: white;
+  padding: 5px;
+  line-height: 30px;
+  margin: 15px;
+  border: 1px #8D1029 solid;
+  box-shadow: 0 0 5px white;
+  color: #8D1029;
+  text-shadow: 0 0 5px #8D1029;
+  animation-name: atencion;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
+
 @keyframes atencion {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* FIN ARTICLE */
 /*----------------------------------------------------------------------------------------------*/
 /* COMIENZO FOOTER */
 .footer {
-    border-top: 1px #B7EE0A solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: transparent;
-    height: auto;
+  border-top: 1px white solid;
+  box-shadow: 0 0 5px white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  height: auto;
 }
 
 .barra ul li {
-    list-style: none;
+  list-style: none;
 }
+
 .barra ul li a {
-    color: #B7EE0A;
-    text-decoration: none;
-    font-size: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  text-shadow: 0 0 5px #8D1029;
 }
+
 .barra a:hover {
-    color:black;
-    background-color: white;
+  color: white;
+  background-color: #8D1029;
 }
+
 .footerRedes {
-    text-align: center;
-    font-size: 20px;
-    letter-spacing: 10px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 10px;
 }
+
 .footerRedes i:hover {
-    color:black;
-    background-color: white;
+  color: #16080E;
+  background-color: white;
 }
+
 .fa-brands {
-    color: #B7EE0A !important;
+  color: #8D1029 !important;
+  text-shadow: 0 0 5px #8D1029;
 }
+
 .footerCopy {
-    color: red;
-    font-size: 10px;
+  color: red;
+  font-size: 10px;
+  text-shadow: 0 0 5px red;
 }
+
 /* FIN FOOTER */
 /*----------------------------------------------------------------------------------------------*/
 /* FIN BOOTSTRAP */
@@ -444,531 +543,110 @@ input:focus {
 /*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------Media Querys---------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
-
 @media screen and (min-width: 768px) {
-    .fa-solid {
-        font-size: 25px;
-    }
-    .logo p {
-        font-size: 10px;
-    }
-    /* Binarias */
-    .imagen1Binarias {
-        margin: 0px;
-        height: 400px;
-    }
-    .imagen2Binarias {
-        margin: 0px;
-        height: 400px;
-    }
-    .barra ul li a {
-        font-size: 15px;
-    }
-    .aviso {
-        font-size: 23px;
-    }
-    .footerRedes {
-        font-size: 25px;
-        letter-spacing: 10px;
-    }
-    .footerCopy {
-        font-size: 15px;
-    }
-    /* Interest */
-    .itemInterest {
-        margin: 20px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .navbar {
-        font-size: 20px;
-    }
-
-    /* Index */
-    .tituloIndex{
-        font-size: 45px;
-    }
-    .subIndex{
-        font-size: 35px;
-    }
-    .subSubIndex {
-        font-size: 30px;
-    }
-    .textoMainIndex {
-        font-size: 20px;
-    }
-    .subTitle {
-        font-size: 35px;
-    }
-    .seccionesIndex {
-        font-size: 35px;
-    }
-    .contenidoIndex a {
-        font-size: 20px;
-    }
-    /* Binarias */
-    .tituloBinarias {
-        font-size: 45px;
-    }
-    .subBinarias {
-        font-size: 35px;
-    }
-    .parrafoBinarias {
-        font-size: 20px;
-    }
-    .imagen1Binarias {
-        height: 430px;
-    }
-    .imagen2Binarias {
-        height: 430px;
-    }
-
-    /*Brokers*/
-    .tituloMainBrokers {
-        font-size: 45px;
-    }
-    .textoMainBrokers {
-        font-size: 20px;
-    }
-    .card-text {
-        font-size: 20px;
-    }
-
-    /*Interesst*/
-    .tituloMainInterest {
-        font-size: 45px;
-    }
-    .textoMainInterest {
-        font-size: 20px;
-    }
-    .contenidoInterestDescripcion {
-        font-size: 20px;
-    }
-    /*Contact*/
-    .tituloMainContact {
-        font-size: 45px;
-    }
-    .textoMainContact {
-        font-size: 20px;
-    }
-    .formularioContact {
-        font-size: 20px;
-    }
-
-    .textoAviso {
-        font-size: 18px;
-    }
-    .fa-solid {
-        font-size: 45px;
-    }
-    .logo p {
-        font-size: 20px;
-    }
-}
-
-@media screen and (min-width: 1150px) {
-    .card {
-        margin: 30px;
-    }
-}
-
-
-
-
-
-/* Header */
-
-/* header {
-    grid-area: "encabezado";
-    border-bottom: #62FC47 solid;
-    height: 100%;
-}
-
-header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 10px;
-    align-items: center;
-    color: #D575F3;
-}
-
-header nav a {
-    text-decoration: none;
-    color: #D575F3;
-    transition: background-color .5;
-}
-
-.logo {
-    text-align: center;
-}
-
-.logo .logoImagen {
-    font-size: 20px;
-}
-
-.logoText {
-    font-size: 8px;
-}
-
-a:hover {
-    color:red;
-    background-color: violet;
-}
-
-.lista {
-    display: block;
-}
-
-.lista li{
-    list-style: none;
-}
-
-.lista ul {
-    list-style: none;
-}
-
-.lista ul li {
-    display: block;
-}
-
-.lista li ul {
-    display: none;
-    position: absolute;
-    padding: 5px;
-}
-
-.lista li:hover > ul {
-    display: block;
-    float: left;
-    padding: 7px;
-    font-size: 10px;
-} */
-
-/* Main Index */
-
-/* .mainIndex {
-    grid-area: "inicio";
-    height: auto;
-    padding: 5px;
-    color: #7643CB; 
-}
-
-.tituloIndex {
-    padding: 3px;
-    text-align: center;
-    text-decoration: underline;
-    animation: bounce; 
-    animation-duration: 2s;
-}
-
-.subIndex {
-    padding: 3px;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.subSubIndex {
-    padding: 3px;
-}
-
-.textoMainIndex {
-    padding: 3px;
-}
-
-/* Contenido Index */
-/* .contenidoIndex {
-    grid-area: "section";
-    height: auto;
-    display: grid;
-    grid-template-areas: 
-        "item1" 
-        "item2" 
-        "item3"
-        "item4";
-    grid-template-rows: auto auto auto auto;
-    justify-items: center;
-    color: #7643CB; 
-}
-
-.contenidoIndex1 {
-    grid-area: "item1";
-    display: flex;
-    flex-direction: column;
-    padding: 3px;
-}
-.contenidoIndex11 {
-    height: auto;
-}
-.contenidoIndex11:hover {
-    transform:scale(1.2);
-}
-.contenidoIndex12 {
-    text-align: center;
-}
-.contenidoIndex13 {
-    text-align: center;
-    padding: 4px;
-    border: 3px #62FC47 solid;
-    border-radius: 25px;
-    box-shadow: 10px 7px 25px red;
-    margin: 15px;
-}
-
-.contenidoIndex2 {
-    grid-area: "item2";
-    display: flex;
-    flex-direction: column;
-}
-.contenidoIndex21 {
-    height: auto;
-}
-.contenidoIndex21:hover {
-    transform:scale(1.2);
-}
-.contenidoIndex22 {
-    text-align: center;
-}
-.contenidoIndex23 {
-    text-align: center;
-    padding: 4px;
-    border: 3px #62FC47 solid;
-    border-radius: 25px;
-    box-shadow: 10px 7px 25px red;
-    margin: 15px;
-}
-
-.contenidoIndex3 {
-    grid-area: "item3";
-    display: flex;
-    flex-direction: column;
-}
-.contenidoIndex31 {
-    height: auto;
-}
-.contenidoIndex31:hover {
-    transform:scale(1.2);
-}
-.contenidoIndex32 {
-    text-align: center;
-}
-.contenidoIndex33 {
-    text-align: center;
-    padding: 4px;
-    border: 3px #62FC47 solid;
-    border-radius: 25px;
-    box-shadow: 10px 7px 25px red;
-    margin: 15px;
-}
-
-.contenidoIndex4 {
-    grid-area: "item4";
-    display: flex;
-    flex-direction: column;
-}
-.contenidoIndex41 {
-    height: auto;
-}
-.contenidoIndex41:hover {
-    transform:scale(1.2);
-}
-.contenidoIndex42 {
-    text-align: center;
-}
-.contenidoIndex43 {
-    text-align: center;
-    padding: 4px;
-    border: 3px #62FC47 solid;
-    border-radius: 25px;
-    box-shadow: 10px 7px 25px red;
-    margin: 15px;
-}
-
-/* Aviso */
-
-/* .sectionAviso {
-    grid-area: "aviso";
-    height: auto;
-}
-.aviso {
-    padding: 5px;
-    line-height: 30px;
-    margin: 15px;
-    border: solid;
-    color: crimson;
-    animation-name: atencion; 
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-@keyframes atencion {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}   */ 
-
-/* Footer */
-
-/* .footer {
-    grid-area: "pie";
-    border-top: #62FC47 solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.barra ul li{
-    list-style: none;
-}
-.barra ul li a {
-    color: #D575F3;
-    text-decoration: none;
-    font-size: 10px;
-}
-.footerRedes {
-    color: #D575F3;
-    text-align: center;
-    font-size: 20px;
+  .fa-solid {
+    font-size: 25px;
+  }
+  .logo p {
+    font-size: 1rem;
+  }
+  /* Binarias */
+  .imagen1Binarias {
+    margin: 0px;
+    height: 400px;
+  }
+  .imagen2Binarias {
+    margin: 0px;
+    height: 400px;
+  }
+  .barra ul li a {
+    font-size: 1rem;
+  }
+  .aviso {
+    font-size: 23px;
+  }
+  .footerRedes {
+    font-size: 25px;
     letter-spacing: 10px;
+  }
+  .footerCopy {
+    font-size: 1rem;
+  }
 }
-.footerCopy {
-    color: red;
-    font-size: 10px;
-}
-
-/* Boton */
-
-/* .subir {
-    height: 40px;
-    width: 40px;
-    position: fixed;
-    bottom: 100px;
-    right: 40px;
-    color: springgreen;
-    border: 2px beige solid;
-    border-radius: 50%;
-    text-align: center;
+@media screen and (min-width: 992px) {
+  .navbar {
+    font-size: 20px;
+  }
+  /* Index */
+  .titulo {
+    font-size: 45px;
+  }
+  .subIndex {
+    font-size: 35px;
+  }
+  .subSubIndex {
     font-size: 30px;
-    line-height: 40px;
-    box-shadow: 0 0 5px black;
+  }
+  .textoMainIndex {
+    font-size: 20px;
+  }
+  .subTitle {
+    font-size: 35px;
+  }
+  .seccionesIndex {
+    font-size: 35px;
+  }
+  .contenidoIndex a {
+    font-size: 20px;
+  }
+  /* Binarias */
+  .subBinarias {
+    font-size: 35px;
+  }
+  .parrafoBinarias {
+    font-size: 20px;
+  }
+  .imagen1Binarias {
+    height: 430px;
+  }
+  .imagen2Binarias {
+    height: 430px;
+  }
+  /*Brokers*/
+  .textoMainBrokers {
+    font-size: 20px;
+  }
+  .card-text {
+    font-size: 20px;
+  }
+  /*Interesst*/
+  .textoMainInterest {
+    font-size: 20px;
+  }
+  .contenidoInterestDescripcion {
+    font-size: 20px;
+  }
+  /*Contact*/
+  .textoMainContact {
+    font-size: 20px;
+  }
+  .formularioContact {
+    font-size: 20px;
+  }
+  .textoAviso {
+    font-size: 18px;
+  }
+  .fa-solid {
+    font-size: 45px;
+  }
+  .logo p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .card {
+    margin: 30px;
+  }
 }
 
-@media screen and (min-width: 600px) {
-    body {
-        grid-template-rows: 60px auto auto auto 70px;
-    }
-    header nav {
-        font-size: 15px;
-    }
-    .logo .logoImagen {
-        font-size: 25px;
-    }
-    .logo p {
-        font-size: 10px;
-    }
-    .lista li:hover > ul {
-        padding: 10px;
-        font-size: 15px;
-    }
-    .barra ul li a {
-        font-size: 15px;
-    }
-    .footerRedes {
-        font-size: 25px;
-        letter-spacing: 10px;
-    }
-    .footerCopy {
-        color: red;
-        font-size: 15px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .lista li:hover > ul {
-        padding: 10px;
-        font-size: 15px;
-    }
-    .contenidoIndex {
-        grid-template-areas: 
-            "item1 item2" 
-            "item3 item4";
-        grid-template-rows: auto auto;
-        grid-template-columns: 1fr 1fr;
-    }
-    .contenidoIndex2 {
-        align-self: center;
-    }
-    .aviso {
-        font-size: 23px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    header nav {
-        font-size: 20px;
-    }
-    .logo .logoImagen {
-        font-size: 30px;
-    }
-    .logo p {
-        font-size: 15px;
-    }
-    .lista li:hover > ul {
-        padding: 10px;
-        font-size: 20px;
-    }
-    .tituloIndex {
-        font-size: 40px;
-    }
-    
-    .subIndex {
-        font-size: 30px;
-    }
-    
-    .subSubIndex {
-        font-size: 25px;
-    }
-    
-    .textoMainIndex {
-        font-size: 20px;
-    }
-
-    .contenidoIndex1 {
-        flex-direction: row;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        justify-content: space-around;
-
-    }
-    .contenidoIndex2 {
-        flex-direction: row;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        justify-content: space-around;
-    }
-    .contenidoIndex3 {
-        flex-direction: row;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        justify-content: space-around;
-    }
-    .contenidoIndex4 {
-        flex-direction: row;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        justify-content: space-around;
-    }
-    .aviso {
-    font-size: 24px;
-    }
-}  */
-
+/*# sourceMappingURL=index.css.map */
