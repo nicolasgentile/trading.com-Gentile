@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
-/*C:\Users\Usuario
-
-C:\Users\Usuario>cd Desktop
-
-C:\Users\Usuario\Desktop>cd root
-
-C:\Users\Usuario\Desktop\root>sass --watch css/estilos.scss css/index.css*/
+/*C:\Users\Usuario\Desktop\root>sass --watch css/estilos.scss css/index.css*/
 * {
   margin: 0;
   padding: 0;
@@ -19,25 +13,8 @@ body {
   padding: 3px;
   scroll-behavior: smooth;
   background-color: #16080E;
-  /*     background: linear-gradient(45deg,#051937,#5877CF,#6DEF9A,#A8EB12);
-      background-size: 400% 400%;
-      position: relative;
-      animation: cambiar 7s ease-in-out infinite;
-      display: grid;
-      grid-template-areas: 
-      "encabezado" 
-      "inicio"
-      "section"
-      "aviso"
-      "pie";
-      grid-template-rows: 50px auto auto auto 70px; */
 }
 
-/* @keyframes cambiar{
-    0%{background-position: 0 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0 50%;}
-} */
 /* COMIENZO BOOTSTRAP */
 /*----------------------------------------------------------------------------------------------*/
 a:hover {
@@ -113,6 +90,29 @@ a:hover {
 
 /* FIN HEADER */
 /*----------------------------------------------------------------------------------------------*/
+/*MIGAJA*/
+.migaja {
+  padding: 5px;
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.breadcrumb {
+  padding: 0;
+  background-color: transparent;
+}
+
+.breadcrumb-item.active {
+  color: #8D1029;
+  text-shadow: 0 0 5px #8D1029;
+}
+
+.breadcrumb a {
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+
+/*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------Comienzo index---------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 /*COMIENZO MAIN INDEX*/
@@ -137,12 +137,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* .jumbotronIndex {
-    background-image: url(../imagen/fondo19.jpg);
-    background-size: cover;
-    background-position: center;
-    border-image: $borderRadius;
-} */
 /*FIN MAIN INDEX*/
 /*----------------------------------------------------------------------------------------------*/
 .subTitle {
@@ -200,8 +194,6 @@ a:hover {
 /*COMIENZO MAIN BINARIAS*/
 .jumbotronBinarias {
   background-image: url(../imagen/fondo19.jpg);
-  /*     background-size: cover;
-      background-position: center; */
 }
 .jumbotronBinarias .subBinarias {
   padding: 3px;
@@ -230,7 +222,7 @@ a:hover {
   text-shadow: 0 0 5px #8D1029;
 }
 
-.imagen1Binarias {
+.imagen1Binarias, .imagen2Binarias {
   padding: 15px;
   background-image: url(../imagen/imagen1Binarias.jpg);
   background-size: cover;
@@ -242,16 +234,9 @@ a:hover {
   box-shadow: 0 0 5px #8D1029;
 }
 
+/*Utilizando Extend*/
 .imagen2Binarias {
-  padding: 15px;
   background-image: url(../imagen/imagen2Binarias.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  margin: 20px;
-  border: 1px solid #8D1029;
-  border-radius: 0.25rem;
-  box-shadow: 0 0 5px #8D1029;
 }
 
 /* FIN SECTION BINARIAS */
@@ -261,42 +246,55 @@ a:hover {
 /*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------Comienzo Brokers-------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
-/*COMIENZO MAIN BROKERS*/
-/* .jumbotronBrokers {
-    background-image: url(../imagen/fondo8.jpg);
-    background-size: cover;
-    background-position: center;
-} */
-/*FIN MAIN BROKERS*/
-/*----------------------------------------------------------------------------------------------*/
 /*COMIENZO SECTION BROKERS*/
+.card--uno {
+  background-color: #8D1029;
+  border-radius: 0.25rem;
+}
+
+.card--dos {
+  background-color: #16080E;
+  border-radius: 0.25rem;
+}
+
+.card--tres {
+  background-color: black;
+  border-radius: 0.25rem;
+}
+
 .item {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
 }
-.item .cardViolet {
-  background-color: #8D1029;
+
+.card--uno {
   text-shadow: 0 0 5px white;
   color: white;
   border: 1px solid white;
   box-shadow: 0 0 5px white;
-  border-radius: 0.25rem;
 }
-.item .cardBlack {
-  /*     background-image: url(../imagen/fondo9.jpg); */
-  background-color: #16080E;
+
+.card--dos {
   text-shadow: 0 0 5px #8D1029;
   color: #8D1029;
   border: 1px solid #8D1029;
   box-shadow: 0 0 5px #8D1029;
-  border-radius: 0.25rem;
 }
-.item .card-text a {
+
+.card--tres {
+  text-shadow: 0 0 5px white;
+  color: white;
+  border: 1px solid white;
+  box-shadow: 0 0 5px #16080E;
+}
+
+.card-text a {
   color: red;
   text-shadow: 10px 7px 25px red;
 }
-.item .card-text a:hover {
+
+.card-text a:hover {
   color: #8D1029;
   background-color: white;
 }
@@ -308,9 +306,6 @@ a:hover {
 /*-----------------------------------Comienzo Interest-------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 /*COMIENZO MAIN INTEREST*/
-/* .jumbotronInterest {
-    background-color: transparent;
-} */
 .textoMainInterest {
   padding: 3px;
   text-decoration: underline;
@@ -328,6 +323,7 @@ a:hover {
   margin: 1rem;
 }
 
+/* Agregando Mixin */
 .itemInterestViolet {
   background-color: #8D1029;
   border: 1px solid white;
@@ -344,16 +340,16 @@ a:hover {
 }
 
 .itemInterestViolet .contenidoInterestCanal {
+  color: white;
   text-align: center;
+  line-height: 1.5;
+  width: 10rem;
   padding: 10px;
   border: 1px white solid;
   border-radius: 0.25rem;
   box-shadow: 0 0 5px white;
   margin: 15px;
-  color: white;
   text-shadow: 0 0 5px white;
-  line-height: 1.5;
-  width: 10rem;
 }
 
 .itemInterestViolet .contenidoInterestCanal a {
@@ -399,8 +395,6 @@ a:hover {
 /*COMIENZO MAIN CONTACT*/
 .jumbotronContact {
   background-image: url(../imagen/fondo19.jpg);
-  /*     background-size: cover;
-      background-position: center; */
 }
 .jumbotronContact .textoMainContact {
   padding: 3px;
@@ -484,6 +478,11 @@ input:focus {
     opacity: 1;
   }
 }
+.textoAviso strong {
+  color: red;
+  text-shadow: 0 0 5px red;
+}
+
 /* FIN ARTICLE */
 /*----------------------------------------------------------------------------------------------*/
 /* COMIENZO FOOTER */
@@ -551,7 +550,7 @@ input:focus {
     font-size: 1rem;
   }
   /* Binarias */
-  .imagen1Binarias {
+  .imagen1Binarias, .imagen2Binarias {
     margin: 0px;
     height: 400px;
   }
@@ -606,7 +605,7 @@ input:focus {
   .parrafoBinarias {
     font-size: 20px;
   }
-  .imagen1Binarias {
+  .imagen1Binarias, .imagen2Binarias {
     height: 430px;
   }
   .imagen2Binarias {
