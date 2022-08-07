@@ -138,6 +138,47 @@ a:hover {
 }
 
 /*FIN MAIN INDEX*/
+.sectionIndex {
+  text-align: center;
+  color: white;
+  height: auto;
+  text-shadow: 0 0 5px white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.parrafoIndex {
+  padding: 3px;
+  line-height: 20px;
+}
+
+.sectionIndex strong {
+  color: #8D1029;
+  text-shadow: 0 0 5px #8D1029;
+}
+
+.question {
+  margin: 4px;
+  padding: 4px;
+}
+
+.list-group-item {
+  margin-top: 15px;
+  background-color: #16080E;
+}
+
+.imagen1Index {
+  background-image: url(../imagen/indexImagen1.jpg);
+  padding: 15px;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid #8D1029;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px #8D1029;
+}
+
 /*----------------------------------------------------------------------------------------------*/
 .subTitle {
   text-align: center;
@@ -549,12 +590,19 @@ input:focus {
   .logo p {
     font-size: 1rem;
   }
-  /* Binarias */
+  /* Index */
+  .parrafoIndex {
+    margin: 0 25px 0 25px;
+  }
   .imagen1Binarias, .imagen2Binarias {
     margin: 0px;
     height: 400px;
   }
   .imagen2Binarias {
+    margin: 0px;
+    height: 400px;
+  }
+  .imagen1Index {
     margin: 0px;
     height: 400px;
   }
@@ -589,6 +637,9 @@ input:focus {
   .textoMainIndex {
     font-size: 20px;
   }
+  .parrafoIndex {
+    font-size: 20px;
+  }
   .subTitle {
     font-size: 35px;
   }
@@ -597,6 +648,9 @@ input:focus {
   }
   .contenidoIndex a {
     font-size: 20px;
+  }
+  .imagen1Index {
+    height: 430;
   }
   /* Binarias */
   .subBinarias {

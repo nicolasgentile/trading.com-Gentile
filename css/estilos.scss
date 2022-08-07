@@ -127,6 +127,44 @@ a:hover {
     }
 }
 /*FIN MAIN INDEX*/
+
+.sectionIndex {
+    text-align: center;
+    color: $color3; 
+    height: auto;
+    text-shadow: 0 0 5px $color3;
+    margin: 5px;
+    padding: 5px
+    
+}
+.parrafoIndex {
+    padding: 3px;
+    line-height: 20px;
+}
+.sectionIndex strong {
+    color: $color1;
+    text-shadow: 0 0 5px $color1;
+}
+.question {
+    margin: 4px;
+    padding: 4px;
+}
+.list-group-item {
+    margin-top: 15px;
+    background-color: $color2;
+}
+.imagen1Index {
+    background-image: url(../imagen/indexImagen1.jpg);
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid $color1;
+    border-radius: $borderRadius;
+    box-shadow: 0 0 5px $color1;
+}
+
 /*----------------------------------------------------------------------------------------------*/
 .subTitle {
     text-align: center;
@@ -499,12 +537,19 @@ $warning:(
     .logo p {
         font-size: $fontSize1;
     }
-    /* Binarias */
+    /* Index */
+    .parrafoIndex {
+        margin: 0 25px 0 25px;
+    }
     .imagen1Binarias {
         margin: 0px;
         height: 400px;
     }
     .imagen2Binarias {
+        margin: 0px;
+        height: 400px;
+    }
+    .imagen1Index {
         margin: 0px;
         height: 400px;
     }
@@ -539,6 +584,9 @@ $warning:(
     .textoMainIndex {
         font-size: 20px;
     }
+    .parrafoIndex {
+        font-size: 20px;
+    }
     .subTitle {
         font-size: 35px;
     }
@@ -548,6 +596,9 @@ $warning:(
     .contenidoIndex a {
         font-size: 20px;
     } 
+    .imagen1Index {
+        height: 430;
+    }
     /* Binarias */
     .subBinarias {
         font-size: 35px;

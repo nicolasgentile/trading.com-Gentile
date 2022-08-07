@@ -1,0 +1,24 @@
+{
+  "name": "info-trading",
+  "version": "1.0.0",
+  "description": "Pagina web dedicada a dar informacion sobre el trading en general.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasgentile/trading.com-Gentile.git"
+  },
+  "keywords": [],
+  "author": "Gentile Nicolas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolasgentile/trading.com-Gentile/issues"
+  },
+  "homepage": "https://github.com/nicolasgentile/trading.com-Gentile#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
