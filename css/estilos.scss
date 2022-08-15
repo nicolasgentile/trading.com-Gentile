@@ -5,7 +5,7 @@ $color2: #16080E;
 $color3: white;
 $color4: red;
 $color5: black;
-$fontSize1: 1rem;
+$fontSize1: 16px;
 $fontFamily: 'Oxygen', sans-serif;
 $borderRadius: 0.25rem;
 * {
@@ -127,15 +127,15 @@ a:hover {
     }
 }
 /*FIN MAIN INDEX*/
-
 .sectionIndex {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     color: $color3; 
     height: auto;
     text-shadow: 0 0 5px $color3;
     margin: 5px;
-    padding: 5px
-    
+    padding: 5px;
 }
 .parrafoIndex {
     padding: 3px;
@@ -150,7 +150,7 @@ a:hover {
     padding: 4px;
 }
 .list-group-item {
-    margin-top: 15px;
+    margin: 0;
     background-color: $color2;
 }
 .imagen1Index {
@@ -170,9 +170,10 @@ a:hover {
     text-align: center;
     color: $color1; 
     text-shadow: 0 0 4px $color1;
-    border: 1px solid $color3;
+    border: 1px solid $color1;
     border-radius: $borderRadius;
-    box-shadow: 0 0 5px $color3;
+    box-shadow: 0 0 5px $color1;
+    background-image: url(../imagen/fondo19.jpg);
 }
 /*----------------------------------------------------------------------------------------------*/
 /* COMIENZO SECTION INDEX*/
@@ -241,7 +242,7 @@ a:hover {
 }
 .imagen1Binarias {
     padding: 15px;
-    background-image: url(../imagen/imagen1Binarias.jpg);
+    background-image: url(../imagen/opciones-binarias-1.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -252,7 +253,7 @@ a:hover {
 }
 /*Utilizando Extend*/
 .imagen2Binarias {
-    background-image: url(../imagen/imagen2Binarias.jpg);
+    background-image: url(../imagen/opciones-binarias-2.jpg);
     @extend .imagen1Binarias;
 }
 /* FIN SECTION BINARIAS */
@@ -360,7 +361,7 @@ $variedad: (
     text-shadow: 0 0 5px $color4;
 }
 .itemInterestBlack {
-    background-color: $color2;
+    background-color: $color5;
     border: 1px solid $color1;
     box-shadow: 0 0 5px $color1;
     color: $color1;
@@ -402,7 +403,7 @@ $variedad: (
 }
 /*FIN MAIN CONTACT*/
 /*----------------------------------------------------------------------------------------------*/
-/*COMIENZO FORMULARIO*/
+/*COMIENZO FORMULARIO E IMAGEN*/
 .formularioContact {
     height: auto;
     padding: 10px;
@@ -410,17 +411,29 @@ $variedad: (
     box-shadow: 0px 0px 10px $color3;
     border-radius: 25px;
     margin: 15px;
-    color: $color1;
+    color: $color3;
+    background-image: url(../imagen/fondo19.jpg);
 }
 input:focus {
 	Color: $color5;
     background-color: $color3;
 }
+.sectionContact {
+    display: flex;
+    flex-direction: column;
+}
+.imagenesContact {
+    background-image: url(../imagen/imagenContact1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px; 
+    padding: 10px;
+}
 .tituloFormulario {
     text-align: center;
     padding: 3px;
     text-decoration: underline;
-    text-shadow: 0 0 5px $color1;
+    text-shadow: 0 0 5px $color3;
 }
 .form-control {
     background-color: transparent;
@@ -428,6 +441,9 @@ input:focus {
     margin: 10px;
     border: 1px $color1 solid;
     width: 90%;
+}
+.text-area {
+    min-height: 100px;
 }
 .btn {
     background-color: $color1;
@@ -498,7 +514,7 @@ $warning:(
 .barra ul li a {
     color: $color3;
     text-decoration: none;
-    font-size: 10px;
+    font-size: $fontSize1;
     text-shadow: 0 0 5px $color1;
 }
 .barra a:hover {
@@ -506,9 +522,16 @@ $warning:(
     background-color: $color1;
 }
 .footerRedes {
-    text-align: center;
     font-size: 20px;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
+}
+.fa-brands {
+    padding: 5px;
+    border: 1px solid $color1;
+    box-shadow: 0 0 5px $color1;
+    border-radius: $borderRadius;
+    text-align: center;
+    padding-left: 14px;
 }
 .footerRedes i:hover {
     color: $color2;
@@ -525,9 +548,6 @@ $warning:(
 }
 /* FIN FOOTER */
 /*----------------------------------------------------------------------------------------------*/
-/* FIN BOOTSTRAP */
-/*----------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------Media Querys---------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 768px) {
@@ -537,19 +557,25 @@ $warning:(
     .logo p {
         font-size: $fontSize1;
     }
-    /* Index */
-    .parrafoIndex {
-        margin: 0 25px 0 25px;
+    .sectionIndex {
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
+    .parrafoIndex1 {
+        width: 50%;
+    }
+    .imagen1Index {
+        margin: 5px;
+        height: 400px;
+        width: 50%;
+        padding: 10px;
     }
     .imagen1Binarias {
         margin: 0px;
         height: 400px;
     }
     .imagen2Binarias {
-        margin: 0px;
-        height: 400px;
-    }
-    .imagen1Index {
         margin: 0px;
         height: 400px;
     }
@@ -584,20 +610,23 @@ $warning:(
     .textoMainIndex {
         font-size: 20px;
     }
+    .parrafoIndex11 {
+        font-size: 20px;
+    }
     .parrafoIndex {
         font-size: 20px;
     }
     .subTitle {
         font-size: 35px;
     }
-    .seccionesIndex {
-        font-size: 35px;
+    .sectionIndex {
+        font-size: 20px;
     }
     .contenidoIndex a {
         font-size: 20px;
     } 
     .imagen1Index {
-        height: 430;
+        height: 630px;
     }
     /* Binarias */
     .subBinarias {
@@ -632,6 +661,14 @@ $warning:(
     }
     .formularioContact {
         font-size: 20px;
+    }
+    .sectionContact {
+        flex-direction: row;
+    }
+    .imagenesContact {
+        width: 850px;
+        height: 700px; 
+        padding: 10px;
     }
     .textoAviso {
         font-size: 18px;

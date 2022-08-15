@@ -26,7 +26,7 @@ a:hover {
 /* COMIENZO HEADER */
 .headerIndex .navbar {
   background-color: transparent !important;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .navbar {
@@ -72,7 +72,7 @@ a:hover {
 }
 
 .logoText {
-  font-size: 1rem;
+  font-size: 16px;
   color: white;
   text-shadow: 0 0 5px white;
 }
@@ -139,6 +139,8 @@ a:hover {
 
 /*FIN MAIN INDEX*/
 .sectionIndex {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   color: white;
   height: auto;
@@ -163,7 +165,7 @@ a:hover {
 }
 
 .list-group-item {
-  margin-top: 15px;
+  margin: 0;
   background-color: #16080E;
 }
 
@@ -184,9 +186,10 @@ a:hover {
   text-align: center;
   color: #8D1029;
   text-shadow: 0 0 4px #8D1029;
-  border: 1px solid white;
+  border: 1px solid #8D1029;
   border-radius: 0.25rem;
-  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 5px #8D1029;
+  background-image: url(../imagen/fondo19.jpg);
 }
 
 /*----------------------------------------------------------------------------------------------*/
@@ -265,7 +268,7 @@ a:hover {
 
 .imagen1Binarias, .imagen2Binarias {
   padding: 15px;
-  background-image: url(../imagen/imagen1Binarias.jpg);
+  background-image: url(../imagen/opciones-binarias-1.jpg);
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -277,7 +280,7 @@ a:hover {
 
 /*Utilizando Extend*/
 .imagen2Binarias {
-  background-image: url(../imagen/imagen2Binarias.jpg);
+  background-image: url(../imagen/opciones-binarias-2.jpg);
 }
 
 /* FIN SECTION BINARIAS */
@@ -399,7 +402,7 @@ a:hover {
 }
 
 .itemInterestBlack {
-  background-color: #16080E;
+  background-color: black;
   border: 1px solid #8D1029;
   box-shadow: 0 0 5px #8D1029;
   color: #8D1029;
@@ -445,7 +448,7 @@ a:hover {
 
 /*FIN MAIN CONTACT*/
 /*----------------------------------------------------------------------------------------------*/
-/*COMIENZO FORMULARIO*/
+/*COMIENZO FORMULARIO E IMAGEN*/
 .formularioContact {
   height: auto;
   padding: 10px;
@@ -453,7 +456,8 @@ a:hover {
   box-shadow: 0px 0px 10px white;
   border-radius: 25px;
   margin: 15px;
-  color: #8D1029;
+  color: white;
+  background-image: url(../imagen/fondo19.jpg);
 }
 
 input:focus {
@@ -461,11 +465,24 @@ input:focus {
   background-color: white;
 }
 
+.sectionContact {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagenesContact {
+  background-image: url(../imagen/imagenContact1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  padding: 10px;
+}
+
 .tituloFormulario {
   text-align: center;
   padding: 3px;
   text-decoration: underline;
-  text-shadow: 0 0 5px #8D1029;
+  text-shadow: 0 0 5px white;
 }
 
 .form-control {
@@ -474,6 +491,10 @@ input:focus {
   margin: 10px;
   border: 1px #8D1029 solid;
   width: 90%;
+}
+
+.text-area {
+  min-height: 100px;
 }
 
 .btn {
@@ -545,7 +566,7 @@ input:focus {
 .barra ul li a {
   color: white;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 16px;
   text-shadow: 0 0 5px #8D1029;
 }
 
@@ -555,9 +576,17 @@ input:focus {
 }
 
 .footerRedes {
-  text-align: center;
   font-size: 20px;
-  letter-spacing: 10px;
+  letter-spacing: 15px;
+}
+
+.fa-brands {
+  padding: 5px;
+  border: 1px solid #8D1029;
+  box-shadow: 0 0 5px #8D1029;
+  border-radius: 0.25rem;
+  text-align: center;
+  padding-left: 14px;
 }
 
 .footerRedes i:hover {
@@ -578,9 +607,6 @@ input:focus {
 
 /* FIN FOOTER */
 /*----------------------------------------------------------------------------------------------*/
-/* FIN BOOTSTRAP */
-/*----------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------Media Querys---------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 768px) {
@@ -588,11 +614,21 @@ input:focus {
     font-size: 25px;
   }
   .logo p {
-    font-size: 1rem;
+    font-size: 16px;
   }
-  /* Index */
-  .parrafoIndex {
-    margin: 0 25px 0 25px;
+  .sectionIndex {
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .parrafoIndex1 {
+    width: 50%;
+  }
+  .imagen1Index {
+    margin: 5px;
+    height: 400px;
+    width: 50%;
+    padding: 10px;
   }
   .imagen1Binarias, .imagen2Binarias {
     margin: 0px;
@@ -602,12 +638,8 @@ input:focus {
     margin: 0px;
     height: 400px;
   }
-  .imagen1Index {
-    margin: 0px;
-    height: 400px;
-  }
   .barra ul li a {
-    font-size: 1rem;
+    font-size: 16px;
   }
   .aviso {
     font-size: 23px;
@@ -617,7 +649,7 @@ input:focus {
     letter-spacing: 10px;
   }
   .footerCopy {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -637,20 +669,23 @@ input:focus {
   .textoMainIndex {
     font-size: 20px;
   }
+  .parrafoIndex11 {
+    font-size: 20px;
+  }
   .parrafoIndex {
     font-size: 20px;
   }
   .subTitle {
     font-size: 35px;
   }
-  .seccionesIndex {
-    font-size: 35px;
+  .sectionIndex {
+    font-size: 20px;
   }
   .contenidoIndex a {
     font-size: 20px;
   }
   .imagen1Index {
-    height: 430;
+    height: 630px;
   }
   /* Binarias */
   .subBinarias {
@@ -685,6 +720,14 @@ input:focus {
   }
   .formularioContact {
     font-size: 20px;
+  }
+  .sectionContact {
+    flex-direction: row;
+  }
+  .imagenesContact {
+    width: 850px;
+    height: 700px;
+    padding: 10px;
   }
   .textoAviso {
     font-size: 18px;

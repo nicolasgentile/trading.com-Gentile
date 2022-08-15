@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Trading/Contact: Contáctate conmigo, escríbeme tus dudas, críticas, opiniones. Todo suma para mejorar el sitio.">
     <meta name="keywords" content="trading, opciones binarias, forex, criptomonedas, trading criptomonedas">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagen/iconFavorite.webp" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS Bootstrap-->
@@ -27,7 +27,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -48,7 +48,7 @@
                     <a class="nav-link" href="./interest.html">Interest</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link active" href="#">Contact</a>
                 </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -70,38 +70,40 @@
     <main>
         <div class="jumbotron jumbotronContact">
             <h2 class="titulo wow animate__animated animate__bounce">¡Contactame!</h2>
-            <p class="textoMainContact wow animate__animated animate__flip">Si tenés alguna duda sobre el contenido, necesitas saber algo al respecto, tenés alguna idea de como mejorar el sitio o alguna información que falte agregar y te parezca importante. ¡No lo dudes! Tu comentario ayuda a mejorar!</p>
+            <p class="textoMainContact">Si tenés alguna duda sobre el contenido, necesitas saber algo al respecto, tenés alguna idea de como mejorar el sitio o alguna información que falte agregar y te parezca importante. ¡No lo dudes! Tu comentario ayuda a mejorar!</p>
         </div>
     </main>
-    <section class="container abs-center">
-        <div class="formularioContact wow animate__animated animate__lightSpeedInLeft"> 
-            <form action="" method="post" enctype="text/plain">
-                <h4 class="tituloFormulario">Formulario de contacto</h4>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre" required>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su apellido" required>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo" required>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Soltero/a</option>
-                    <option>Casado/a</option>
-                    <option>Cónyuge</option>
-                    <option>Separado/a</option>
-                    <option>Viudo/a</option>
-                </select>
-                
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        Recibir noticias y actualizaciones?
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Comentarios:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Escriba su comentario = )"></textarea>
-                </div>
-                <button type="submit" class="btn btn-warning">Enviar</button>
-                <button type="reset" class="btn btn-warning">Borrar todo</button>
-            </form>
+    <section class="sectionContact">
+        <div class="container abs-center formContact">
+            <div class="formularioContact wow animate__animated animate__lightSpeedInLeft"> 
+                <form action="" method="post" enctype="text/plain">
+                    <h4 class="tituloFormulario">Formulario de contacto</h4>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre" required>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su apellido" required>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo" required>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Soltero/a</option>
+                        <option>Casado/a</option>
+                        <option>Cónyuge</option>
+                        <option>Separado/a</option>
+                        <option>Viudo/a</option>
+                    </select>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Recibir noticias y actualizaciones?
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Comentarios:</label>
+                        <textarea class="form-control text-area" id="exampleFormControlTextarea1" rows="10" placeholder="Escriba su comentario = )"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Enviar</button>
+                    <button type="reset" class="btn btn-warning">Borrar todo</button>
+                </form>
+            </div>
         </div>
+        <div class="imagenesContact"></div>
     </section>
     <article class="container-fluid">
         <div class="aviso">
@@ -128,7 +130,7 @@
             <p = class="copy">Copyright &copy; 2022</p>
         </div>
     </footer>
-    <a href="#" class="subir"><i class="fa-solid fa-ufo"></i></a> -->
+    <a href="#" class="subir"><i class="fa-solid fa-ufo"></i></a>
     <!-- JS Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
